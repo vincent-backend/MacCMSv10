@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>苹果cmsV10</title>
+    <base href="" />
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!--Global CSS-->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Custom CSS-->
+    <link href="assets/css/guide.css" rel="stylesheet" text="text/css" />
+
+    <!--Bootstrap icons-->
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" /-->
+    <!--Google fonts-->
+
+    <!--Core theme CSS (includes Bootstrap)-->
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDocumentMenu" aria-controls="offcanvasNavbar">
+                <span>
+                    <img src="assets/images/navbar/home_black.svg" width="60" height="60" />
+                </span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="logo">
+                    <div class="logo-text">指南</div>
+                </div>
+                <div class="logo-md d-flex flex-row align-items-center">
+                    <img src="assets/images/logo.png" alt="苹果CMS" width="50" height="50"
+                        class="d-inline-block align-text-center">
+                    <div class="logo-text">苹果cmsV10</div>
+                </div>
+
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span>
+                    <img src="assets/images/navbar/menu.svg" width="48" height="48" />
+                </span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand d-flex flex-row align-items-center" href="index.html">
+                        <img src="assets/images/logo.png" alt="苹果CMS" width="50" height="50"
+                            class="d-inline-block align-text-center">
+                        <div class="logo-text">苹果CMS</div>
+                    </a>
+                    <button type="button" class="btn-close pe-1" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="font-size: 24px; font-weight: 700;"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="piracy_detection.html">指南</a>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="document.html">配置</a>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">插件</a>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">模板</a>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
+                            <select class="form-select" style="max-width: 100px; border: 0;"
+                                aria-label="Default select example">
+                                <option value="V10" selected>了解更多</option>
+                                <option value="V8">了解更多</option>
+                            </select>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
+                            <select class="form-select" style="max-width: 100px; border: 0;"
+                                aria-label="Default select example">
+                                <option value="V10" selected>v10.x</option>
+                                <option value="V8">v8.x</option>
+                            </select>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
+                            选择语言
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/maccms/">
+                                Github
+                                <img src="assets/images/nav_ic_Share.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Sidebar menu for Mobile h5-->
+        <div class="menu offcanvas offcanvas-start" tabindex="-1" id="offcanvasDocumentMenu"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header mt-3">
+                <div class="flex-shrink-1"></div>
+                <button type="button" class="btn-close pe-1" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="font-size: 24px; font-weight: 700;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link" style="color: #05031A; font-size: 24px; font-weight: bold;"
+                        disabled>指南</button>
+                    <button class="nav-link active" id="v-pills-start-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-start" type="button" role="tab" aria-controls="v-pills-start"
+                        aria-selected="true">MacCms V10.x</button>
+                    <button class="btn-dmenu nav-link" id="v-pills-problems-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-problems" type="button" role="tab" aria-controls="v-pills-problems"
+                        aria-selected="false">快速上手</button>
+                    <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-templates"
+                        aria-selected="false">目录结构</button>
+                        <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-templates"
+                        aria-selected="false">模板插件</button>
+                </div>
+            </div>
+        </div>
+        <!--Sidebar menu for Mobile h5 End-->
+    </nav>
+    <!--NavBar End-->
+    <!--Main Container-->
+    <div class="container">
+        <div class="d-flex flex-row align-items-start" style="position: relative;">
+            <div class="sidebar">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link" style="color: #05031A; font-size: 20px; font-weight: bold;"
+                        disabled>指南</button>
+                    <button class="nav-link d-sidebar-menu active" id="v-pills-maccmsv10-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-maccmsv10" type="button" role="tab" aria-controls="v-pills-maccmsv10"
+                        aria-selected="true">MacCms V10.x</button>
+                    <button class="nav-link" id="v-pills-problems-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-problems" type="button" role="tab" aria-controls="v-pills-problems"
+                        aria-selected="false">快速上手</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">目录结构</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">模板插件</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">第三方资源</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">多语言支持</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">更新日志</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">常用SQL语句</button>
+                    <button class="nav-link"
+                        style="color: #05031A; font-size: 20px; font-weight: bold; padding-top: 20px;"
+                        disabled>其他</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">常见问题</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">程序安全</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">捐赠支持</button>
+                </div>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <!--MaccmsV10-->
+                <div class="tab-pane fade show active" id="v-pills-maccmsv10" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <h2>MacCms V10.x</h2>
+                    <h3 style="padding-top: 20px;">程序介绍</h3>
+                    <p style="padding-top: 10px;">苹果CMS 程序是一套采用 PHP+MYSQL 环境下运行的完善而强大的快速建站系统。 
+                        经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。 
+                        程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
+                        仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。 
+                        程序易用性和功能上一直以来都积极采纳广大站长提出的各种好的建议，迅速响应各种紧急问题，我们的服务理念贯穿其中，保证每一位站长每一个环节都可以从容应对。
+                    </p>
+                    <h3 style="padding-top: 20px;">苹果CMS能做什么？</h3>
+                    <p style="padding-top: 10px;">苹果CMS功能非常强大，模块丰富。
+                        可以用于搭建专业的视频站如：收费网课类、教学资料站，也可以用于搭 建群站、文章资讯站、图片素材站、网址导航站 等等类型，还可以扩展开发搭建移动APP的服务端。
+                        苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。收费网课类</p>
+                </div>
+                <!--Quick Start End-->
+                <!--Problems-->
+                <div class="tab-pane fade" id="v-pills-problems" role="tabpanel" aria-labelledby="v-pills-problems-tab"
+                    tabindex="0">
+
+                </div>
+                <!--Problems End-->
+                <!--Templates-->
+                <div class="tab-pane fade" id="v-pills-templates" role="tabpanel"
+                    aria-labelledby="v-pills-templates-tab" tabindex="0">
+
+                </div>
+                <!--Templates End-->
+            </div>
+        </div>
+    </div>
+    <!--Main Container End-->
+    <!--Footer-->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3"></div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="footer-download d-flex flex-wrap align-items-center justify-content-center">
+                        <a class="footer-download-link" href="#">
+                            苹果cms
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link" href="#">
+                            苹果cmsV8
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link" href="#">
+                            苹果cmsV10
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link d-flex" href="#">
+                            苹果cms下载
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link d-flex" href="#">
+                            苹果cms在线手册
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start mt-2 mt-md-1">
+                    <img src="assets/images/footer/51-la.png" width="74" height="74">
+                    <span class="footer-support-text">提供CDN赞助</span>
+                </div>
+                <div class="footer-license">© 2020 #5CMS or MACCMS MIT license</div>
+                <div class="footer-statement">声明：本站所开发的相关程序请在遵守法律的前提下使用，对用户在使用过程中的信息内容本站不负任何责任！</div>
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer-->
+
+
+    <!--Global Scripts-->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/jQuery/jquery.min.js"></script>
+    <!--Custom Scripts-->
+    <script src="assets/js/maccmsv10.js"></script>
+</body>
+
+</html>

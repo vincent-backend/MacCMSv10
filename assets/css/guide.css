@@ -1,0 +1,463 @@
+/**************************
+/* Stylesheet for Apple CMS
+/* Created 30/11/2023
+**************************/
+
+/**** Global ****/
+
+@font-face {
+  font-family: "PingFang-SC";
+  src: url("../../assets/font/PingFang-Medium.ttf");
+}
+
+/********* Responsive design <768 *********/
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #05031A;
+  line-height: 47px;
+}
+
+h3 {
+  font-size: 27px;
+  font-weight: bold;
+  color: #323643;
+  line-height: 28px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+html,
+body {
+  font-family: "PingFang-SC";
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d5366;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-right: 0 !important;
+}
+
+.container {
+  max-width: 768px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-fluid {
+  max-width: 768px;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: #05031a;
+  margin: 10px 0 0 10px;
+}
+
+.offcanvas {
+  min-width: 100%;
+  padding: 0rem 1.25rem;
+}
+
+.offcanvas-collapse {
+  position: fixed;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.offcanvas-collapse.open {
+  visibility: visible;
+  transform: translateX(-100%);
+}
+
+.offcanvas-header {
+  padding-top: 7px;
+  padding-left: 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: #05031a;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 21px;
+  color: #05031a;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+
+.navbar-nav > .active > a {
+  color: #40cc92;
+}
+.nav-item > a:hover {
+  color: #40cc92;
+}
+
+.navbar-toggler {
+  padding: 0px;
+  border: 0px;
+}
+
+.menu-splitter {
+  color: #d9e6e7;
+  display: none;
+}
+
+header {
+  margin-top: 150px;
+}
+
+.text-cms {
+  color: #40cc92;
+}
+
+.header1 {
+  font-weight: bold;
+  color: #05031a;
+}
+
+.header2 {
+  padding-top: 1.7rem;
+  font-size: 2.125rem;
+  word-break: break-all;
+}
+
+.header3 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  word-break: break-all;
+}
+
+/** Footer **/
+footer {
+  padding-bottom: 50px;
+}
+
+.footer-download {
+  padding-top: 40px;
+}
+
+.footer-download-link {
+  color: #05031a !important;
+  font-size: 1.08rem;
+  word-break: normal;
+}
+
+.footer-download-splitter {
+  background-color: rgba(217, 230, 231, 1);
+  width: 2px;
+  height: 16px;
+  margin: 0 25px;
+}
+
+.footer-support-text {
+  color: #4d5366;
+  font-size: 18px;
+}
+
+.footer-license {
+  color: #4d5366;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-statement {
+  padding-top: 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+
+/** Document.html **/
+select {
+  font-family: "PingFang-SC";
+  font-size: 18px;
+}
+
+select option {
+  font-family: "PingFang-SC";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logo {
+  display: block !important;
+}
+.logo-md {
+  display: none !important;
+}
+.sidebar {
+  display: none;
+}
+.sidebar-splitter {
+  display: none;
+}
+
+.menu .offcanvas-body .nav-link {
+  background: none;
+  color: #4d5366;
+  text-align: left;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 16px 0 16px 0;
+}
+
+.menu .offcanvas-body .nav-link.active {
+  color: #40cc92;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.code {
+  border: 1px solid #E2E2E2;
+}
+.code-header {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E2E2E2;
+  padding-left: 17px;
+}
+.code-body {
+  display: flex;
+  flex-direction: row;
+}
+.code-num {
+  width: 60px;
+  height: 100%;
+  background: #F2F2F2;
+  border-right: 1px solid #E2E2E2;
+  text-align: center;
+}
+.code-num-list {
+  display: block;
+  list-style-type: none;
+  padding: 6px 0 0 0;
+  line-height: 26px;
+}
+
+.code-space {
+  width: 100%;
+  padding: 6px 0 0 20px;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+.code-space-list {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  line-height: 26px;
+}
+.code-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.code-space-1 {
+  width: 2px;
+  height: 16px;
+  background: #4D5366;
+  margin-right: 4px;
+}
+.code-space-2 {
+  width: 24px;
+  height: 16px;
+  border-left: 2px solid #4D5366;
+  border-right: 2px solid #4D5366;
+  margin-right: 4px;
+}
+
+/**** Responsive design >768 ****/
+@media (min-width: 768px) {
+  /** Global **/
+  html,
+  body {
+    font-size: 14px;
+    color: #4d5366;
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+  }
+
+  .container,
+  .container-fluid {
+    max-width: 1260px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #05031A;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #05031A;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .offcanvas {
+    min-width: auto;
+    background-image: none;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    margin-top: 0px;
+  }
+
+  .menu-splitter {
+    width: 1px;
+    height: 12px;
+    background: #d9e6e7;
+    display: block;
+  }
+
+  header {
+    margin-top: 150px;
+  }
+
+  .header1 {
+    color: var(--bs-black);
+  }
+
+  .header2 {
+    padding-top: 1.125rem;
+    font-size: 24px;
+    word-break: break-all;
+  }
+
+  .header3 {
+    font-size: 14px;
+    padding-top: 1rem;
+    word-break: break-all;
+  }
+
+  /*Footer*/
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .footer-download {
+    padding-top: 40px;
+  }
+
+  .footer-download-link {
+    font-size: 14px;
+  }
+
+  .footer-download-splitter {
+    background-color: rgba(217, 230, 231, 1);
+    width: 0.054rem;
+    height: 0.875rem;
+    margin: 0 12px;
+  }
+
+  .footer-license {
+    padding-top: 84px;
+  }
+
+  .footer-support-text {
+    color: #4d5366;
+    font-size: 14px;
+  }
+
+  .footer-statement {
+    padding-top: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .logo {
+    display: none !important;
+  }
+  .logo-md {
+    display: flex !important;
+    flex-direction: row;
+  }
+  .menu {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+    min-width: 230px;
+  }
+
+  .sidebar .nav-link {
+    line-height: 20px;
+    background: none;
+    border-radius: 0;
+    color: #4d5366;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    margin: 10px 0 10px 0;
+  }
+  .sidebar .nav-link.active {
+    background: none;
+    color: #40cc92;
+    font-weight: bold;
+    border-right: 4px solid #40cc92;
+  }
+
+  select {
+    font-family: "PingFang-SC";
+    font-size: 16px;
+  }
+
+  select option {
+    font-family: "PingFang-SC";
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .container .tab-content {
+    border-left: 1px solid #D9E6E7;
+    padding-left: 80px;
+  }
+}
