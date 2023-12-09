@@ -300,6 +300,15 @@ select option {
   margin-right: 4px;
 }
 
+.git-rectangle {
+  position: relative;
+  height: 24px;
+  padding: 0 10px;
+background: #F2F2F2;
+border-radius: 12px;
+text-align: end;
+}
+
 /**** Responsive design >768 ****/
 @media (min-width: 768px) {
   /** Global **/
@@ -425,6 +434,7 @@ select option {
   .sidebar {
     display: block;
     min-width: 230px;
+    border-right: 1px solid #D9E6E7;
   }
 
   .sidebar .nav-link {
@@ -457,7 +467,6 @@ select option {
   }
   
   .container .tab-content {
-    border-left: 1px solid #D9E6E7;
     padding-left: 80px;
   }
 }
