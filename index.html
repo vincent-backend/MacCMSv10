@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDocumentMenu" aria-controls="offcanvasNavbar">
+                data-bs-target="#offcanvasSidebarMenu" aria-controls="offcanvasNavbar">
                 <span>
                     <img src="assets/images/navbar/home_black.svg" width="60" height="60" />
                 </span>
@@ -80,16 +80,14 @@
                         </li>
                         <li class="menu-splitter"></li>
                         <li class="nav-item">
-                            <select class="form-select" style="border: 0;"
-                                aria-label="Default select example">
+                            <select class="form-select" style="border: 0;" aria-label="Default select example">
                                 <option value="V10" selected>了解更多</option>
                                 <option value="V8">了解更多</option>
                             </select>
                         </li>
                         <li class="menu-splitter"></li>
                         <li class="nav-item">
-                            <select class="form-select" style="border: 0;"
-                                aria-label="Default select example">
+                            <select class="form-select" style="border: 0;" aria-label="Default select example">
                                 <option value="V10" selected>v10.x</option>
                                 <option value="V8">v8.x</option>
                             </select>
@@ -110,7 +108,7 @@
             </div>
         </div>
         <!--Sidebar menu for Mobile h5-->
-        <div class="menu offcanvas offcanvas-start" tabindex="-1" id="offcanvasDocumentMenu"
+        <div class="menu offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebarMenu"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header mt-3">
                 <div class="flex-shrink-1"></div>
@@ -130,7 +128,7 @@
                     <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-templates"
                         aria-selected="false">目录结构</button>
-                        <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                    <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-templates"
                         aria-selected="false">模板插件</button>
                 </div>
@@ -141,7 +139,7 @@
     <!--NavBar End-->
     <!--Main Container-->
     <div class="container">
-        <div class="d-flex flex-row align-items-start" style="position: relative;">
+        <div class="container-inner">
             <div class="sidebar">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button class="nav-link" style="color: #05031A; font-size: 20px; font-weight: bold;"
@@ -190,28 +188,28 @@
                     aria-labelledby="v-pills-home-tab" tabindex="0">
                     <h2 class="tab-title">MacCms V10.x</h2>
                     <div class="git-informs">
-                        <div class="issues">
+                        <div class="issues" id="issues">
                             <div class="title">issues</div>
                             15 Open
                         </div>
-                        <div class="forks">
+                        <div class="forks" id="forks">
                             <div class="title">forks</div>
                             655
                         </div>
-                        <div class="stars">
+                        <div class="stars" id="stars">
                             <div class="title">stars</div>
                             1.8k
                         </div>
-                        <div class="php-v">
+                        <div class="php-v" id="php-v">
                             <div class="title">php</div>
                             >=5.6.x
                         </div>
-                        <div class="mysql-v">
+                        <div class="mysql-v" id="mysql-v">
                             <div class="title">MySQL</div>
                             >=5.5.x
                         </div>
                     </div>
-                    <div class="d-flex flex-row flex-wrap mt-4 gap-4">
+                    <div class="link-pannel">
                         <a href="#">下载</a>
                         <a href="#">官网</a>
                         <a href="#">飞机群</a>
@@ -219,21 +217,65 @@
                         <a href="#">Github</a>
                     </div>
                     <div class="bd-info">
-                        <p class="info-title">特色</p>
-                        <p class="info-description">v10采用 <green>ThinkPHP5.x </green>(opens new window)内核进行开发，扩展了模板处理引擎，将后台程序与html模板简单的分离出来，让设计人员与程序人员最大限度的发挥自己的优势而互不干扰，大大加快了项目有序、快速的完成。 
+                        <p class="title">特色</p>
+                        <p class="description">v10采用 <green>ThinkPHP5.x </green>(opens new
+                            window)内核进行开发，扩展了模板处理引擎，将后台程序与html模板简单的分离出来，让设计人员与程序人员最大限度的发挥自己的优势而互不干扰，大大加快了项目有序、快速的完成。
                             即使您是第一次接触，也会在最短的时间内熟练掌握它的使用方法。后台管理模块，一目了然，操作简单，绝对不会让您眼花缭乱。</p>
                     </div>
-                    <h3 style="padding-top: 20px;">程序介绍</h3>
-                    <p style="padding-top: 10px;">苹果CMS 程序是一套采用 PHP+MYSQL 环境下运行的完善而强大的快速建站系统。 
-                        经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。 
+
+                    <h3 class="tab-subtitle">程序介绍</h3>
+                    <p class="tab-paragraph">
+                        <red>苹果CMS</red> 程序是一套采用 <red>PHP + MYSQL</red> 环境下运行的完善而强大的快速建站系统。
+                        经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。
                         程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
-                        仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。 
+                        仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。
                         程序易用性和功能上一直以来都积极采纳广大站长提出的各种好的建议，迅速响应各种紧急问题，我们的服务理念贯穿其中，保证每一位站长每一个环节都可以从容应对。
                     </p>
-                    <h3 style="padding-top: 20px;">苹果CMS能做什么？</h3>
-                    <p style="padding-top: 10px;">苹果CMS功能非常强大，模块丰富。
-                        可以用于搭建专业的视频站如：收费网课类、教学资料站，也可以用于搭 建群站、文章资讯站、图片素材站、网址导航站 等等类型，还可以扩展开发搭建移动APP的服务端。
-                        苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。收费网课类</p>
+
+                    <h3 class="tab-subtitle">苹果CMS能做什么？</h3>
+                    <p class="tab-paragraph">苹果CMS功能非常强大，模块丰富。可以用于搭建专业的视频站如：<red>收费网课类</red>、<red>教学资料站</red>，也可以用于搭
+                        <red>建群站</red>、<red>文章资讯站</red>、<red>图片素材站</red>、<red>网址导航站</red> 等等类型，还可以扩展开发搭建移动APP的服务端。
+                        苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。
+                    </p>
+
+                    <h3 class="tab-subtitle">传送门</h3>
+                    <p class="tab-paragraph">
+                    <ul class="sub-contents-green">
+                        <li><a href="#">- 下载</a></li>
+                        <li><a href="#">- 安装</a></li>
+                        <li><a href="#">- 升级</a></li>
+                        <li aria-disabled="true">...</li>
+                    </ul>
+                    </p>
+
+                    <h3 class="tab-subtitle">常用配置</h3>
+                    <p class="tab-paragraph">
+                    <ul class="sub-contents-green">
+                        <li><a href="#">- 采集配置</a></li>
+                        <li><a href="#">- 伪静态</a></li>
+                        <li><a href="#">- 定时任务</a></li>
+                        <li><a href="#">- 群站配置</a></li>
+                        <li><a href="#">- 短信发送</a></li>
+                        <li aria-disabled="true">...</li>
+                    </ul>
+                    </p>
+
+                    <h3 class="tab-subtitle">插件</h3>
+                    <p class="tab-paragraph">
+                    <ul class="sub-contents-green">
+                        <li><a href="#">- 如何安装插件？</a></li>
+                        <li><a href="#">- 如何开发苹果cms插件？</a></li>
+                        <li><a href="#">- 系统功能模块预留扩展方式</a></li>
+                        <li><a href="#">- 播放器相关</a></li>
+                        <li aria-disabled="true">...</li>
+                    </ul>
+                    </p>
+
+                    <div class="bd-danger">
+                        <p class="title">免责声明</p>
+                        <p class="description">本程序仅供内部学习和交流使用，没有内置任何数据，请在遵守当地法律的前提下使用本站程序，对用户在使用过程中的自行维护的信息内容本站不负任何责任！
+                        </p>
+                    </div>
                 </div>
                 <!--Quick Start End-->
                 <!--Problems-->

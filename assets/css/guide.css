@@ -41,6 +41,14 @@ p {
   line-height: 34px;
 }
 
+p green {
+  color: #40cc92;
+}
+
+p red {
+  color: #d85252;
+}
+
 html,
 body {
   font-family: "PingFang-SC";
@@ -69,6 +77,10 @@ body {
   font-size: 24px;
   color: #05031a;
   margin: 10px 0 0 10px;
+}
+
+ul {
+  list-style-type: none !important;
 }
 
 .offcanvas {
@@ -239,6 +251,66 @@ select option {
   margin-bottom: 90px;
 }
 
+.tab-subtitle {
+  /* font size: h3 */
+  margin-top: 30px;
+}
+
+.tab-paragraph {
+  margin-top: 20px;
+  line-height: 34px;
+}
+
+.sub-contents-green {
+  padding: 0;
+  line-height: 45px;
+}
+
+.sub-contents-green > li > a {
+  color: #40cc92;
+  font-size: 22px;
+}
+
+.bd-info {
+  background-color: #f2f9ff;
+  color: #51a4f3;
+  margin-top: 30px;
+  padding: 14px;
+}
+
+.bd-danger {
+  background-color: #fcf2f2;
+  color: #D85252;
+  margin-top: 30px;
+  padding: 14px;
+}
+
+.bd-info .title, 
+.bd-danger .title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.bd-info .description,
+.bd-danger .description {
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.link-pannel {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 32px;
+}
+
+.link-pannel > a {
+  color: #40cc92;
+  font-size: 22px;
+  line-height: 22px;
+}
+
 .git-informs {
   display: flex;
   flex-wrap: wrap;
@@ -269,7 +341,7 @@ select option {
   padding: 0 14px;
   text-align: center;
   color: #ffffff;
-  background-color: #7286EF;
+  background-color: #7286ef;
   border-radius: 16px;
 }
 
@@ -292,7 +364,7 @@ select option {
   padding: 0 13px;
   text-align: center;
   color: #ffffff;
-  background-color: #40CC92;
+  background-color: #40cc92;
   border-radius: 16px;
 }
 
@@ -315,7 +387,7 @@ select option {
   padding: 0 14px;
   text-align: center;
   color: #ffffff;
-  background-color: #51A4F3;
+  background-color: #51a4f3;
   border-radius: 16px;
 }
 
@@ -338,7 +410,7 @@ select option {
   padding: 0 14px;
   text-align: center;
   color: #ffffff;
-  background-color: #F3C115;;
+  background-color: #f3c115;
   border-radius: 16px;
 }
 
@@ -361,30 +433,8 @@ select option {
   padding: 0 14px;
   text-align: center;
   color: #ffffff;
-  background-color: #7286EF;;
+  background-color: #7286ef;
   border-radius: 16px;
-}
-
-.bd-info {
-  background-color: #f2f9ff;
-  color: #51a4f3;
-  margin: 20px 0;
-  padding: 14px;
-}
-
-.info-title {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 32px;
-}
-
-.info-description {
-  font-size: 20px;
-  line-height: 33px;
-}
-
-p green {
-  color: #40CC92;
 }
 
 /**** Responsive design >768 ****/
@@ -509,6 +559,13 @@ p green {
   .menu {
     display: none;
   }
+
+  .container-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+
   .sidebar {
     display: block;
     min-width: 230px;
@@ -548,13 +605,64 @@ p green {
     padding-left: 80px;
   }
 
+  .tab-subtitle {
+    /* font size: h3 */
+    margin-top: 30px;
+  }
+
+  .tab-paragraph {
+    margin-top: 16px;
+    line-height: 24px;
+  }
+
+  .sub-contents-green {
+    line-height: 32px;
+  }
+  
+  .sub-contents-green > li > a {
+    color: #40cc92;
+    font-size: 16px;
+  }
+
+  .bd-info {
+    padding: 10px 20px;
+  }
+
+  .bd-danger {
+    padding: 10px 20px;
+  }
+
+  .bd-info .title,
+  .bd-danger .title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .bd-info .description,
+  .bd-danger .description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .link-pannel {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 24px;
+  }
+
+  .link-pannel > a {
+    color: #40cc92;
+    font-size: 16px;
+  }
+
   .git-informs {
     gap: 16px;
     margin-top: 30px;
     font-size: 14px;
     line-height: 24px;
   }
-  
+
   .git-informs .issues {
     position: relative;
     width: 130px;
@@ -562,40 +670,40 @@ p green {
     padding-right: 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .issues .title {
     width: auto;
     height: 24px;
     padding: 0 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .forks {
     width: 96px;
     height: 24px;
     padding-right: 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .forks .title {
     height: 24px;
     padding: 0 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .stars {
     width: 96px;
     height: 24px;
     padding-right: 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .stars .title {
     height: 24px;
     padding: 0 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .php-v {
     position: relative;
     width: 120px;
@@ -603,42 +711,24 @@ p green {
     padding-right: 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .php-v .title {
     width: 54px;
     height: 24px;
     padding: 0 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .mysql-v {
     width: 125px;
     height: 24px;
     padding-right: 10px;
     border-radius: 12px;
   }
-  
+
   .git-informs .mysql-v .title {
     height: 24px;
     padding: 0 8px;
     border-radius: 12px;
   }
-
-.bd-info {
-  background-color: #f2f9ff;
-  color: #51a4f3;
-  margin: 30px 0;
-  padding: 14px;
-}
-
-.info-title {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: bold;
-}
-
-.info-description {
-  font-size: 14px;
-  line-height: 24px;
-}
 }
