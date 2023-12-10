@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-size: 34px;
   font-weight: bold;
-  color: #05031A;
+  color: #05031a;
   line-height: 47px;
 }
 
@@ -195,7 +195,6 @@ footer {
   text-align: justify;
 }
 
-
 /** Document.html **/
 select {
   font-family: "PingFang-SC";
@@ -240,73 +239,152 @@ select option {
   margin-bottom: 90px;
 }
 
-.code {
-  border: 1px solid #E2E2E2;
-}
-.code-header {
-  width: 100%;
-  height: 38px;
-  line-height: 38px;
-  background: #F2F2F2;
-  border-bottom: 1px solid #E2E2E2;
-  padding-left: 17px;
-}
-.code-body {
+.git-informs {
   display: flex;
-  flex-direction: row;
-}
-.code-num {
-  width: 60px;
-  height: 100%;
-  background: #F2F2F2;
-  border-right: 1px solid #E2E2E2;
-  text-align: center;
-}
-.code-num-list {
-  display: block;
-  list-style-type: none;
-  padding: 6px 0 0 0;
-  line-height: 26px;
-}
-
-.code-space {
-  width: 100%;
-  padding: 6px 0 0 20px;
-  background-color: #ffffff;
-  overflow-x: auto;
-}
-.code-space-list {
-  display: block;
-  list-style-type: none;
-  padding: 0;
-  line-height: 26px;
-}
-.code-line {
-  display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-}
-.code-space-1 {
-  width: 2px;
-  height: 16px;
-  background: #4D5366;
-  margin-right: 4px;
-}
-.code-space-2 {
-  width: 24px;
-  height: 16px;
-  border-left: 2px solid #4D5366;
-  border-right: 2px solid #4D5366;
-  margin-right: 4px;
+  justify-content: start;
+  gap: 16px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 32px;
 }
 
-.git-rectangle {
+.git-informs .issues {
   position: relative;
-  height: 24px;
-  padding: 0 10px;
-background: #F2F2F2;
-border-radius: 12px;
-text-align: end;
+  width: 170px;
+  height: 32px;
+  padding-right: 14px;
+  background: #f2f2f2;
+  border-radius: 16px;
+  text-align: right;
+}
+
+.git-informs .issues .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 32px;
+  padding: 0 14px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7286EF;
+  border-radius: 16px;
+}
+
+.git-informs .forks {
+  position: relative;
+  width: 127px;
+  height: 32px;
+  padding-right: 14px;
+  background: #f2f2f2;
+  border-radius: 16px;
+  text-align: right;
+}
+
+.git-informs .forks .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 32px;
+  padding: 0 13px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #40CC92;
+  border-radius: 16px;
+}
+
+.git-informs .stars {
+  position: relative;
+  width: 128px;
+  height: 32px;
+  padding-right: 14px;
+  background: #f2f2f2;
+  border-radius: 16px;
+  text-align: right;
+}
+
+.git-informs .stars .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 32px;
+  padding: 0 14px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #51A4F3;
+  border-radius: 16px;
+}
+
+.git-informs .php-v {
+  position: relative;
+  width: 145px;
+  height: 32px;
+  padding-right: 14px;
+  background: #f2f2f2;
+  border-radius: 16px;
+  text-align: right;
+}
+
+.git-informs .php-v .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 32px;
+  padding: 0 14px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #F3C115;;
+  border-radius: 16px;
+}
+
+.git-informs .mysql-v {
+  position: relative;
+  width: 176px;
+  height: 32px;
+  padding-right: 14px;
+  background: #f2f2f2;
+  border-radius: 16px;
+  text-align: right;
+}
+
+.git-informs .mysql-v .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 32px;
+  padding: 0 14px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7286EF;;
+  border-radius: 16px;
+}
+
+.bd-info {
+  background-color: #f2f9ff;
+  color: #51a4f3;
+  margin: 20px 0;
+  padding: 14px;
+}
+
+.info-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.info-description {
+  font-size: 20px;
+  line-height: 33px;
+}
+
+p green {
+  color: #40CC92;
 }
 
 /**** Responsive design >768 ****/
@@ -329,14 +407,14 @@ text-align: end;
   h2 {
     font-size: 30px;
     font-weight: bold;
-    color: #05031A;
+    color: #05031a;
     line-height: 42px;
   }
 
   h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #05031A;
+    color: #05031a;
     line-height: 28px;
   }
 
@@ -420,7 +498,7 @@ text-align: end;
     font-weight: 500;
     text-align: center;
   }
-  
+
   .logo {
     display: none !important;
   }
@@ -434,7 +512,7 @@ text-align: end;
   .sidebar {
     display: block;
     min-width: 230px;
-    border-right: 1px solid #D9E6E7;
+    border-right: 1px solid #d9e6e7;
   }
 
   .sidebar .nav-link {
@@ -465,8 +543,102 @@ text-align: end;
     font-size: 16px;
     font-weight: 500;
   }
-  
+
   .container .tab-content {
     padding-left: 80px;
   }
+
+  .git-informs {
+    gap: 16px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .git-informs .issues {
+    position: relative;
+    width: 130px;
+    height: 24px;
+    padding-right: 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .issues .title {
+    width: auto;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .forks {
+    width: 96px;
+    height: 24px;
+    padding-right: 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .forks .title {
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .stars {
+    width: 96px;
+    height: 24px;
+    padding-right: 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .stars .title {
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .php-v {
+    position: relative;
+    width: 120px;
+    height: 24px;
+    padding-right: 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .php-v .title {
+    width: 54px;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .mysql-v {
+    width: 125px;
+    height: 24px;
+    padding-right: 10px;
+    border-radius: 12px;
+  }
+  
+  .git-informs .mysql-v .title {
+    height: 24px;
+    padding: 0 8px;
+    border-radius: 12px;
+  }
+
+.bd-info {
+  background-color: #f2f9ff;
+  color: #51a4f3;
+  margin: 30px 0;
+  padding: 14px;
+}
+
+.info-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.info-description {
+  font-size: 14px;
+  line-height: 24px;
+}
 }
