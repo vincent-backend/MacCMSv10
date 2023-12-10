@@ -142,11 +142,15 @@
         <div class="container-inner">
             <!--Sidebar menu for desktop-->
             <div class="sidebar">
-                <div class="nav flex-column nav-pills" aria-orientation="vertical">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button class="nav-link" style="color: #05031A; font-size: 20px; font-weight: bold;"
                         disabled>指南</button>
-                    <button class="nav-link d-sidebar-menu active" href="c">MacCms V10.x</button>
-                    <div class="nav-link d-sidebar-menu"><a href="#">快速上手</a></div>
+                    <button class="nav-link d-sidebar-menu active" id="v-pills-maccmsv10-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-maccmsv10" type="button" role="tab" aria-controls="v-pills-maccmsv10"
+                        aria-selected="true">MacCms V10.x</button>
+                    <button class="nav-link" id="v-pills-get-started-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-get-started" type="button" role="tab"
+                        aria-controls="v-pills-get-started" aria-selected="false">快速上手</button>
                     <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
                         aria-selected="false">目录结构</button>
