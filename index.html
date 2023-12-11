@@ -80,21 +80,52 @@
                         </li>
                         <li class="menu-splitter"></li>
                         <li class="nav-item">
-                            <select class="form-select" style="border: 0;" aria-label="Default select example">
-                                <option value="V10" selected>了解更多</option>
-                                <option value="V8">了解更多</option>
-                            </select>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    了解更多
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <button class="dropdown-item disabled" disabled>API</button>
+                                    <li><a class="dropdown-item" href="#">采集接口</a></li>
+                                    <li><a class="dropdown-item" href="#">前端接口</a></li>
+                                    <button class="dropdown-item disabled" disabled>站长手册</button>
+                                    <li><a class="dropdown-item" href="#">买模板</a></li>
+                                    <li><a class="dropdown-item" href="#">服务器</a></li>
+                                    <li><a class="dropdown-item" href="#">广告联盟</a></li>
+                                    <li><a class="dropdown-item" href="#">常见问题</a></li>
+                                    <li><a class="dropdown-item" href="#">行业术语</a></li>
+                                    <button class="dropdown-item disabled" disabled>其他</button>
+                                    <li><a class="dropdown-item" href="#">其他cms转苹果cms</a></li>
+                                    <li><a class="dropdown-item" href="#">网站搬家</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-splitter"></li>
                         <li class="nav-item">
-                            <select class="form-select" style="border: 0;" aria-label="Default select example">
-                                <option value="V10" selected>v10.x</option>
-                                <option value="V8">v8.x</option>
-                            </select>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    V10
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">V10</a></li>
+                                    <li><a class="dropdown-item" href="#">V8</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-splitter"></li>
                         <li class="nav-item">
-                            选择语言
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    选择语言
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">简体中文</a></li>
+                                    <li><a class="dropdown-item" href="#">繁体中文</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-splitter"></li>
                         <li class="nav-item">
@@ -116,21 +147,20 @@
                     style="font-size: 24px; font-weight: 700;"></button>
             </div>
             <div class="offcanvas-body">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link" style="color: #05031A; font-size: 24px; font-weight: bold;"
-                        disabled>指南</button>
-                    <button class="nav-link active" id="v-pills-maccmsv10-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-maccmsv10" type="button" role="tab" aria-controls="v-pills-maccmsv10"
-                        aria-selected="true">MacCms V10.x</button>
-                    <button class="btn-dmenu nav-link" id="v-pills-get-started-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-get-started" type="button" role="tab"
-                        aria-controls="v-pills-get-started" aria-selected="false">快速上手</button>
-                    <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-templates"
-                        aria-selected="false">目录结构</button>
-                    <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-templates"
-                        aria-selected="false">模板插件</button>
+                <div class="nav flex-column nav-pills me-3" aria-orientation="vertical">
+                    <button class="nav-link nav-link-disabled" disabled>基础说明</button>
+                    <a class="nav-link active" href="" aria-selected="true">MacCms V10.x</a>
+                    <a class="nav-link " href="configuration/index.html">快速上手</a>
+                    <a class="nav-link " href="configuration/index.html">目录结构</a>
+                    <a class="nav-link " href="configuration/index.html">模板插件</a>
+                    <a class="nav-link " href="configuration/index.html">第三方资源</a>
+                    <a class="nav-link " href="configuration/index.html">多语言支持</a>
+                    <a class="nav-link " href="configuration/index.html">更新日志</a>
+                    <a class="nav-link " href="configuration/index.html">常用SQL语句</a>
+                    <button class="nav-link  nav-link-disabled mt-4" disabled>其他</button>
+                    <a class="nav-link " href="configuration/index.html">常见问题</a>
+                    <a class="nav-link " href="configuration/index.html">程序安全</a>
+                    <a class="nav-link " href="configuration/index.html">捐赠支持</a>
                 </div>
             </div>
         </div>
@@ -142,138 +172,137 @@
         <div class="container-inner">
             <!--Sidebar menu for desktop-->
             <div class="sidebar">
-                <div class="nav flex-column nav-pills" aria-orientation="vertical">
-                    <button class="nav-link" style="color: #05031A; font-size: 20px; font-weight: bold;"
-                        disabled>指南</button>
-                    <button class="nav-link d-sidebar-menu active" href="c">MacCms V10.x</button>
-                    <div class="nav-link d-sidebar-menu"><a href="#">快速上手</a></div>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">目录结构</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">模板插件</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">第三方资源</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">多语言支持</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">更新日志</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">常用SQL语句</button>
-                    <button class="nav-link"
-                        style="color: #05031A; font-size: 20px; font-weight: bold; padding-top: 20px;"
-                        disabled>其他</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">常见问题</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">程序安全</button>
-                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">捐赠支持</button>
-                </div>
+                <ul class="nav flex-column" aria-orientation="vertical">
+                    <li class="nav-link nav-link-disabled" disabled>指南</li>
+                    <li class="section-1 nav-link active"><a href="#section-1">MacCms V10.x</a></li>
+                    <li class="section-2 nav-link sub-link"><a href="#section-2">
+                            <div class="ring d-inline-flex"></div><span> 程序介绍</span>
+                        </a>
+                    </li>
+                    <li class="section-3 nav-link sub-link"><a href="#section-3">
+                            <div class="ring d-inline-flex"></div><span> 苹果CMS能做什么？</span>
+                        </a>
+                    </li>
+                    <li class="section-4 nav-link sub-link"><a href="#section-4">
+                            <div class="ring d-inline-flex"></div><span> 传送门</span>
+                        </a>
+                    </li>
+                    <li class="nav-link"><a href="">快速上手</a></li>
+                    <li class="nav-link"><a href="">目录结构</a></li>
+                    <li class="nav-link"><a href="">模板插件</a></li>
+                    <li class="nav-link"><a href="">第三方资源</a></li>
+                    <li class="nav-link"><a href="">多语言支持</a></li>
+                    <li class="nav-link"><a href="">更新日志</a></li>
+                    <li class="nav-link"><a href="">常用SQL语句</a></li>
+                    <li class="nav-link nav-link-disabled" disabled>其他</li>
+                    <li class="nav-link"><a href="">常见问题</a></li>
+                    <li class="nav-link"><a href="">程序安全</a></li>
+                    <li class="nav-link"><a href="">捐赠支持</a></li>
+                </ul>
             </div>
             <!--Sidebar menu for desktop End-->
             <div class="main-content">
-                <h2 class="tab-title">MacCms V10.x</h2>
-                <div class="git-informs">
-                    <div class="issues" id="issues">
-                        <div class="title">issues</div>
-                        15 Open
+                <section id="section-1">
+                    <h2 class="tab-title">MacCms V10.x</h2>
+                    <div class="git-informs">
+                        <div class="issues" id="issues">
+                            <div class="title">issues</div>
+                            15 Open
+                        </div>
+                        <div class="forks" id="forks">
+                            <div class="title">forks</div>
+                            655
+                        </div>
+                        <div class="stars" id="stars">
+                            <div class="title">stars</div>
+                            1.8k
+                        </div>
+                        <div class="php-v" id="php-v">
+                            <div class="title">php</div>
+                            >=5.6.x
+                        </div>
+                        <div class="mysql-v" id="mysql-v">
+                            <div class="title">MySQL</div>
+                            >=5.5.x
+                        </div>
                     </div>
-                    <div class="forks" id="forks">
-                        <div class="title">forks</div>
-                        655
+                    <div class="link-pannel">
+                        <a href="#">下载</a>
+                        <a href="#">官网</a>
+                        <a href="#">飞机群</a>
+                        <a href="#">第三方社区</a>
+                        <a href="#">Github</a>
                     </div>
-                    <div class="stars" id="stars">
-                        <div class="title">stars</div>
-                        1.8k
+                    <div class="bd-info">
+                        <p class="title">特色</p>
+                        <p class="description">v10采用 <green>ThinkPHP5.x </green>(opens new
+                            window)内核进行开发，扩展了模板处理引擎，将后台程序与html模板简单的分离出来，让设计人员与程序人员最大限度的发挥自己的优势而互不干扰，大大加快了项目有序、快速的完成。
+                            即使您是第一次接触，也会在最短的时间内熟练掌握它的使用方法。后台管理模块，一目了然，操作简单，绝对不会让您眼花缭乱。</p>
                     </div>
-                    <div class="php-v" id="php-v">
-                        <div class="title">php</div>
-                        >=5.6.x
-                    </div>
-                    <div class="mysql-v" id="mysql-v">
-                        <div class="title">MySQL</div>
-                        >=5.5.x
-                    </div>
-                </div>
-                <div class="link-pannel">
-                    <a href="#">下载</a>
-                    <a href="#">官网</a>
-                    <a href="#">飞机群</a>
-                    <a href="#">第三方社区</a>
-                    <a href="#">Github</a>
-                </div>
-                <div class="bd-info">
-                    <p class="title">特色</p>
-                    <p class="description">v10采用 <green>ThinkPHP5.x </green>(opens new
-                        window)内核进行开发，扩展了模板处理引擎，将后台程序与html模板简单的分离出来，让设计人员与程序人员最大限度的发挥自己的优势而互不干扰，大大加快了项目有序、快速的完成。
-                        即使您是第一次接触，也会在最短的时间内熟练掌握它的使用方法。后台管理模块，一目了然，操作简单，绝对不会让您眼花缭乱。</p>
-                </div>
-
-                <h3 class="tab-subtitle">程序介绍</h3>
-                <p class="tab-paragraph">
-                    <red>苹果CMS</red> 程序是一套采用 <red>PHP + MYSQL</red> 环境下运行的完善而强大的快速建站系统。
-                    经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。
-                    程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
-                    仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。
-                    程序易用性和功能上一直以来都积极采纳广大站长提出的各种好的建议，迅速响应各种紧急问题，我们的服务理念贯穿其中，保证每一位站长每一个环节都可以从容应对。
-                </p>
-
-                <h3 class="tab-subtitle">苹果CMS能做什么？</h3>
-                <p class="tab-paragraph">苹果CMS功能非常强大，模块丰富。可以用于搭建专业的视频站如：<red>收费网课类</red>、<red>教学资料站</red>，也可以用于搭
-                    <red>建群站</red>、<red>文章资讯站</red>、<red>图片素材站</red>、<red>网址导航站</red> 等等类型，还可以扩展开发搭建移动APP的服务端。
-                    苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。
-                </p>
-
-                <h3 class="tab-subtitle">传送门</h3>
-                <p class="tab-paragraph">
-                <ul class="sub-contents-green">
-                    <li><a href="#">- 下载</a></li>
-                    <li><a href="#">- 安装</a></li>
-                    <li><a href="#">- 升级</a></li>
-                    <li aria-disabled="true">...</li>
-                </ul>
-                </p>
-
-                <h3 class="tab-subtitle">常用配置</h3>
-                <p class="tab-paragraph">
-                <ul class="sub-contents-green">
-                    <li><a href="#">- 采集配置</a></li>
-                    <li><a href="#">- 伪静态</a></li>
-                    <li><a href="#">- 定时任务</a></li>
-                    <li><a href="#">- 群站配置</a></li>
-                    <li><a href="#">- 短信发送</a></li>
-                    <li aria-disabled="true">...</li>
-                </ul>
-                </p>
-
-                <h3 class="tab-subtitle">插件</h3>
-                <p class="tab-paragraph">
-                <ul class="sub-contents-green">
-                    <li><a href="#">- 如何安装插件？</a></li>
-                    <li><a href="#">- 如何开发苹果cms插件？</a></li>
-                    <li><a href="#">- 系统功能模块预留扩展方式</a></li>
-                    <li><a href="#">- 播放器相关</a></li>
-                    <li aria-disabled="true">...</li>
-                </ul>
-                </p>
-
-                <div class="bd-danger">
-                    <p class="title">免责声明</p>
-                    <p class="description">本程序仅供内部学习和交流使用，没有内置任何数据，请在遵守当地法律的前提下使用本站程序，对用户在使用过程中的自行维护的信息内容本站不负任何责任！
+                </section>
+                <section id="section-2">
+                    <h3 class="tab-subtitle">程序介绍</h3>
+                    <p class="tab-paragraph">
+                        <red>苹果CMS</red> 程序是一套采用 <red>PHP + MYSQL</red> 环境下运行的完善而强大的快速建站系统。
+                        经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。
+                        程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
+                        仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。
+                        程序易用性和功能上一直以来都积极采纳广大站长提出的各种好的建议，迅速响应各种紧急问题，我们的服务理念贯穿其中，保证每一位站长每一个环节都可以从容应对。
                     </p>
-                </div>
+                </section>
+                <section id="section-3">
+                    <h3 class="tab-subtitle">苹果CMS能做什么？</h3>
+                    <p class="tab-paragraph">苹果CMS功能非常强大，模块丰富。可以用于搭建专业的视频站如：<red>收费网课类</red>、<red>教学资料站</red>，也可以用于搭
+                        <red>建群站</red>、<red>文章资讯站</red>、<red>图片素材站</red>、<red>网址导航站</red> 等等类型，还可以扩展开发搭建移动APP的服务端。
+                        苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。
+                    </p>
+                </section>
+                <section id="section-4">
+                    <h3 class="tab-subtitle">传送门</h3>
+                    <p class="tab-paragraph">
+                    <ul class="sub-contents-green">
+                        <li><a href="#">- 下载</a></li>
+                        <li><a href="#">- 安装</a></li>
+                        <li><a href="#">- 升级</a></li>
+                        <li aria-disabled="true">...</li>
+                    </ul>
+                    </p>
+
+                    <h3 class="tab-subtitle">常用配置</h3>
+                    <p class="tab-paragraph">
+                    <ul class="sub-contents-green">
+                        <li><a href="#">- 采集配置</a></li>
+                        <li><a href="#">- 伪静态</a></li>
+                        <li><a href="#">- 定时任务</a></li>
+                        <li><a href="#">- 群站配置</a></li>
+                        <li><a href="#">- 短信发送</a></li>
+                        <li aria-disabled="true">...</li>
+                    </ul>
+                    </p>
+
+                    <h3 class="tab-subtitle">插件</h3>
+                    <p class="tab-paragraph">
+                    <ul class="sub-contents-green">
+                        <li><a href="#">- 如何安装插件？</a></li>
+                        <li><a href="#">- 如何开发苹果cms插件？</a></li>
+                        <li><a href="#">- 系统功能模块预留扩展方式</a></li>
+                        <li><a href="#">- 播放器相关</a></li>
+                        <li aria-disabled="true">...</li>
+                    </ul>
+                    </p>
+
+                    <div class="bd-danger">
+                        <p class="title">免责声明</p>
+                        <p class="description">本程序仅供内部学习和交流使用，没有内置任何数据，请在遵守当地法律的前提下使用本站程序，对用户在使用过程中的自行维护的信息内容本站不负任何责任！
+                        </p>
+                    </div>
+                </section>
                 <!--Prev, Next-->
                 <div class="prev-next">
-                    <div>Next</div>
+                    <a href="">
+                        快速上手
+                        <img class="arrow-right" src="assets/images/com_ic_arrow_right.svg">
+                    </a>
                 </div>
             </div>
         </div>
@@ -326,6 +355,7 @@
     <script src="assets/plugins/jQuery/jquery.min.js"></script>
     <!--Custom Scripts-->
     <script src="assets/js/maccmsv10.js"></script>
+    <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
 </body>
 
 </html>
