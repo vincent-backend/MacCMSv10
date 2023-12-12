@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>苹果cmsV10</title>
-    <base href="" />
+    <base href="../" />
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!--Global CSS-->
@@ -144,7 +144,7 @@
                 <div class="nav flex-column nav-pills me-3" aria-orientation="vertical">
                     <button class="nav-link nav-link-disabled" disabled>基础说明</button>
                     <a class="nav-link active" href="" aria-selected="true">MacCms V10.x</a>
-                    <a class="nav-link " href="guide/get-started.html">快速上手</a>
+                    <a class="nav-link " href="configuration/index.html">快速上手</a>
                     <a class="nav-link " href="configuration/index.html">目录结构</a>
                     <a class="nav-link " href="configuration/index.html">模板插件</a>
                     <a class="nav-link " href="configuration/index.html">第三方资源</a>
@@ -168,20 +168,20 @@
             <div class="sidebar">
                 <ul class="nav flex-column" aria-orientation="vertical">
                     <li class="nav-link nav-link-disabled" disabled>指南</li>
-                    <li class="section-1 nav-link active"><a href="#section-1">MacCms V10.x</a></li>
+                    <li class="nav-link"><a href="index.html">MacCms V10.x</a></li>
+                    <li class="section-1 nav-link active"><a href="#section-1">快速上手</a></li>
                     <li class="section-2 nav-link sub-link"><a href="#section-2">
-                            <div class="ring d-inline-flex"></div><span> 程序介绍</span>
+                            <div class="ring d-inline-flex"></div><span> 添加网站</span>
                         </a>
                     </li>
                     <li class="section-3 nav-link sub-link"><a href="#section-3">
-                            <div class="ring d-inline-flex"></div><span> 苹果CMS能做什么？</span>
+                            <div class="ring d-inline-flex"></div><span> 下载安装包</span>
                         </a>
                     </li>
                     <li class="section-4 nav-link sub-link"><a href="#section-4">
-                            <div class="ring d-inline-flex"></div><span> 传送门</span>
+                            <div class="ring d-inline-flex"></div><span> 进入安装步骤</span>
                         </a>
                     </li>
-                    <li class="nav-link"><a href="guide/get-started.html">快速上手</a></li>
                     <li class="nav-link"><a href="">目录结构</a></li>
                     <li class="nav-link"><a href="">模板插件</a></li>
                     <li class="nav-link"><a href="">第三方资源</a></li>
@@ -197,58 +197,43 @@
             <!--Sidebar menu for desktop End-->
             <div class="main-content">
                 <section id="section-1">
-                    <h2 class="tab-title">MacCms V10.x</h2>
-                    <div class="git-informs">
-                        <div class="issues" id="issues">
-                            <div class="title">issues</div>
-                            15 Open
-                        </div>
-                        <div class="forks" id="forks">
-                            <div class="title">forks</div>
-                            655
-                        </div>
-                        <div class="stars" id="stars">
-                            <div class="title">stars</div>
-                            1.8k
-                        </div>
-                        <div class="php-v" id="php-v">
-                            <div class="title">php</div>
-                            >=5.6.x
-                        </div>
-                        <div class="mysql-v" id="mysql-v">
-                            <div class="title">MySQL</div>
-                            >=5.5.x
-                        </div>
-                    </div>
-                    <div class="link-pannel">
-                        <a href="#">下载</a>
-                        <a href="#">官网</a>
-                        <a href="#">飞机群</a>
-                        <a href="#">第三方社区</a>
-                        <a href="#">Github</a>
-                    </div>
+                    <h2>快速上手</h2>
+                    <h4>安装环境可以使用 <green>宝塔面板</green> (opens new window)运行环境，以下是使用宝塔面板创建苹果cms站长详细步骤教程</h4>
                     <div class="bd-info">
-                        <p class="title">特色</p>
-                        <p class="description">v10采用 <green>ThinkPHP5.x </green>(opens new
-                            window)内核进行开发，扩展了模板处理引擎，将后台程序与html模板简单的分离出来，让设计人员与程序人员最大限度的发挥自己的优势而互不干扰，大大加快了项目有序、快速的完成。
-                            即使您是第一次接触，也会在最短的时间内熟练掌握它的使用方法。后台管理模块，一目了然，操作简单，绝对不会让您眼花缭乱。</p>
+                        <p class="title">前提条件</p>
+                        <ul class="description" style="list-style-type:circle;">
+                            <li>Windows 平台： IIS/Apache/Nginx/等 + PHP(5.5 +) + MySQL(5.5 +)</li>
+                            <li>Linux/Unix 平台： Apache/Nginx/等 + PHP (5.5 +) + MySQL(5.5 +) (PHP必须在非安全模式下运行)</li>
+                          </ul>
                     </div>
                 </section>
                 <section id="section-2">
-                    <h3 class="subtitle">程序介绍</h3>
+                    <h3 class="subtitle">添加网站</h3>
                     <p class="tab-paragraph">
-                        <red>苹果CMS</red> 程序是一套采用 <red>PHP + MYSQL</red> 环境下运行的完善而强大的快速建站系统。
-                        经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。
-                        程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
-                        仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。
-                        程序易用性和功能上一直以来都积极采纳广大站长提出的各种好的建议，迅速响应各种紧急问题，我们的服务理念贯穿其中，保证每一位站长每一个环节都可以从容应对。
+                        - 绑定域名 <br>
+                        - 创建mysql数据库 <br>
+                        - 选择PHP版本为5.6以上
+                        <img src="assets/images/guide/pic_1.png" class="d-inline-block mt-3" width="100%">
+                        <img src="assets/images/guide/pic_2.png" class="d-inline-block mt-3" width="100%">
                     </p>
+                    
                 </section>
                 <section id="section-3">
-                    <h3 class="subtitle">苹果CMS能做什么？</h3>
-                    <p class="tab-paragraph">苹果CMS功能非常强大，模块丰富。可以用于搭建专业的视频站如：<red>收费网课类</red>、<red>教学资料站</red>，也可以用于搭
-                        <red>建群站</red>、<red>文章资讯站</red>、<red>图片素材站</red>、<red>网址导航站</red> 等等类型，还可以扩展开发搭建移动APP的服务端。
-                        苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。
+                    <h3 class="subtitle">下载安装包</h3>
+                    <p class="tab-paragraph">- 进入添加好的网目录
+                        <img src="assets/images/guide/pic_3.png" class="d-inline-block mt-3" width="100%">
+                        <p>- 点击远程下载，输入</p>
+                        <div class="code-green">
+                            <div class="code-line">
+                                <div class="number">1</div>
+                                <div class="splitter"></div>
+                                <div class="code">https://cdn.jsdelivr.net/gh/magicblack/maccms_down@mastermaccms10.zip</div>
+                            </div>
+                            <div class="code-line">
+                                sfd
+                            </div>
+                        </div>
+                        <img src="assets/images/guide/pic_4.png" class="d-inline-block" width="100%">
                     </p>
                 </section>
                 <section id="section-4">
@@ -293,7 +278,7 @@
                 </section>
                 <!--Prev, Next-->
                 <div class="prev-next">
-                    <a href="guide/get-started.html">
+                    <a href="">
                         快速上手
                         <img class="arrow-right" src="assets/images/com_ic_arrow_right.svg">
                     </a>

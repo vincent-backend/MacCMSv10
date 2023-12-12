@@ -11,8 +11,8 @@ $(document).ready(function(){
             activeSection = $(this).next();
         }
         var sectionId   = this.element.id;
-        $('ul li').removeClass('active');
-        $('ul li.' + sectionId).addClass('active');
+        $('.sidebar ul li').removeClass('active');
+        $('.sidebar ul li.' + sectionId).addClass('active');
     });
 });
 

@@ -35,12 +35,20 @@ h3 {
   line-height: 28px;
 }
 
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #323643;
+  line-height: 30px;
+}
+
 p {
   font-size: 20px;
   font-weight: 500;
   line-height: 34px;
 }
 
+h4 green,
 p green {
   color: #40cc92;
 }
@@ -80,10 +88,6 @@ body {
   font-size: 24px;
   color: #05031a;
   margin: 10px 0 0 10px;
-}
-
-ul {
-  list-style-type: none !important;
 }
 
 .offcanvas {
@@ -292,7 +296,7 @@ select option {
   margin-bottom: 90px;
 }
 
-.tab-subtitle {
+.subtitle {
   /* font size: h3 */
   margin-top: 30px;
 }
@@ -305,6 +309,7 @@ select option {
 .sub-contents-green {
   padding: 0;
   line-height: 45px;
+  list-style-type:none !important;
 }
 
 .sub-contents-green > li > a {
@@ -499,6 +504,32 @@ select option {
   border-radius: 16px;
 }
 
+.code-green {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.code-green .code-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+.code-line .number {
+  width: 34px;
+  height: inherit;
+  text-align: start;
+  border-right: 1px solid #D9E6E7;
+}
+.code-line .code {
+  margin-left: 20px;
+  background-color: #ebf9f4;
+  padding: 0 10px;
+  word-break: break-all;
+}
+
 /**** Responsive design >768 ****/
 @media (min-width: 768px) {
   /** Global **/
@@ -507,6 +538,7 @@ select option {
     font-size: 14px;
     color: #4d5366;
     overflow-x: hidden; /* Prevent scroll on narrow devices */
+    line-height: 22px;
   }
 
   body {
@@ -532,6 +564,12 @@ select option {
     font-weight: bold;
     color: #05031a;
     line-height: 28px;
+  }
+
+  h4 {
+    color: #05031a;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   p {
@@ -708,7 +746,7 @@ select option {
     padding-left: 80px;
   }
 
-  .tab-subtitle {
+  .subtitle {
     /* font size: h3 */
     margin-top: 30px;
   }
