@@ -512,19 +512,20 @@ select option {
 .code-green .code-line {
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: center;
   font-size: 20px;
   line-height: 30px;
 }
 .code-line .number {
-  width: 34px;
-  height: inherit;
+  display: grid;
+  min-width: 24px;
   text-align: start;
+  align-items: center;
   border-right: 1px solid #D9E6E7;
 }
+
 .code-line .code {
   margin-left: 20px;
+  color: #40CC92;
   background-color: #ebf9f4;
   padding: 0 10px;
   word-break: break-all;
@@ -892,5 +893,32 @@ select option {
     height: 24px;
     padding: 0 8px;
     border-radius: 12px;
+  }
+
+  .code-green {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .code-green .code-line {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .code-line .number {
+    display: grid;
+    min-width: 26px;
+    text-align: start;
+    align-items: center;
+    border-right: 1px solid #D9E6E7;
+  }
+  
+  .code-line .code {
+    margin-left: 20px;
+    color: #40CC92;
+    background-color: #ebf9f4;
+    padding: 2px 10px;
+    word-break: break-all;
   }
 }
