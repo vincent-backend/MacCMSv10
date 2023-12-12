@@ -56,7 +56,13 @@
                         style="font-size: 24px; font-weight: 700;"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+                        <li class="nav-item search-h5">
+                            <div class="input-group">
+                                <input type="text" id="search-input-h5" class="search-click-h5" />
+                                <div class="search-icon"></div>
+                            </div>
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="index.html">指南</a>
                         </li>
@@ -94,9 +100,9 @@
                                     <li><a class="dropdown-item" href="#">网站搬家</a></li>
                                 </ul>
                             </div>
-                        </li>
-                        <li class="menu-splitter"></li>
-                        <li class="nav-item">
+                        </li>        
+                        <li class="menu-s menu-splitter"></li>
+                        <li class="nav-item menu-s">
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -108,7 +114,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menu-splitter"></li>
+                        <li class="menu-s menu-splitter"></li>
                         <li class="nav-item">
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -121,12 +127,19 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menu-splitter"></li>
+                        <li class="menu-splitter menu-s"></li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://github.com/magicblack/maccms10">
                                 Github
                                 <img src="assets/images/nav_ic_Share.svg">
                             </a>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item search-md">
+                            <div class="input-group">
+                                <input type="text" id="search-input" class="search-click" />
+                                <div class="search-icon"></div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -198,14 +211,22 @@
                                     <li class="struct-line"><div class="struct-space-2"></div>- extra &nbsp;//配置文件</li>
                                     <li class="struct-line"><div class="struct-space-2"></div>- index &nbsp;//前台模块</li>
                                     <li class="struct-line"><div class="struct-space-2"></div>- install &nbsp;//安装模块</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- lang &nbsp;//语言包</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- database.php &nbsp;//数据库配置文件</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- config.php &nbsp;//tp5应用配置文件</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- route.php &nbsp;//伪静态路配置文件</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- common.php &nbsp;//伪静态路配置文件 </li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- eaddons &nbsp;//插件目录</li>
                                     <li class="struct-line"><div class="struct-space-1"></div>- extend &nbsp;//扩展目录</li>
                                     <li class="struct-line"><div class="struct-space-1"></div>- runtime &nbsp;//缓存目录</li>
                                     <li class="struct-line"><div class="struct-space-1"></div>- static &nbsp;//静态文件目录</li>
                                     <li class="struct-line"><div class="struct-space-1"></div>- template &nbsp;//前台模板目录</li>
                                     <li class="struct-line"><div class="struct-space-1"></div>- thinkphp &nbsp;//tp目录</li>
                                     <li class="struct-line"><div class="struct-space-1"></div>- upload &nbsp;//附件目录</li>
-                                    <li class="struct-line"><div class="struct-space-1"></div>- wendor &nbsp;//第三发库目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- vendor &nbsp;//第三发库目录</li>
                                     <li class="struct-line"><div class="struct-space-1"></div>- index.php &nbsp;//入口文件</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- api.php &nbsp;//api入口文件</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- admin.php &nbsp;//后台入口文件</li>
                                 </ul>
                             </div>
                         </div>
