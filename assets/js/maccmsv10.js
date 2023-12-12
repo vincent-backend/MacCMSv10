@@ -1,7 +1,8 @@
-/* Offcanvas */
+/* Offcanvas
 $("#offcanvasSidebarMenu .nav-link").click(function(){
     $('.offcanvas').offcanvas('hide');
 });
+ */
 
 $(document).ready(function(){
     $('section').waypoint(function(direction) {

@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>苹果cmsV10</title>
-    <base href="" />
+    <base href="../" />
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!--Global CSS-->
@@ -143,9 +143,9 @@
             <div class="offcanvas-body">
                 <div class="nav flex-column nav-pills me-3" aria-orientation="vertical">
                     <button class="nav-link nav-link-disabled" disabled>基础说明</button>
-                    <a class="nav-link active" href="" aria-selected="true">MacCms V10.x</a>
-                    <a class="nav-link " href="guide/get-started.html">快速上手</a>
-                    <a class="nav-link " href="guide/directory-structure.html">目录结构</a>
+                    <a class="nav-link" href="index.html">MacCms V10.x</a>
+                    <a class="nav-link" href="guide/get-started.html">快速上手</a>
+                    <a class="nav-link active" href="guide/directory-structure.html" aria-selected="true">目录结构</a>
                     <a class="nav-link " href="configuration/index.html">模板插件</a>
                     <a class="nav-link " href="configuration/index.html">第三方资源</a>
                     <a class="nav-link " href="configuration/index.html">多语言支持</a>
@@ -168,21 +168,9 @@
             <div class="sidebar">
                 <ul class="nav flex-column" aria-orientation="vertical">
                     <li class="nav-link nav-link-disabled" disabled>指南</li>
-                    <li class="section-1 nav-link active"><a href="#section-1">MacCms V10.x</a></li>
-                    <li class="section-2 nav-link sub-link"><a href="#section-2">
-                            <div class="ring d-inline-flex"></div><span> 程序介绍</span>
-                        </a>
-                    </li>
-                    <li class="section-3 nav-link sub-link"><a href="#section-3">
-                            <div class="ring d-inline-flex"></div><span> 苹果CMS能做什么？</span>
-                        </a>
-                    </li>
-                    <li class="section-4 nav-link sub-link"><a href="#section-4">
-                            <div class="ring d-inline-flex"></div><span> 传送门</span>
-                        </a>
-                    </li>
+                    <li class="nav-link"><a href="index.html">MacCms V10.x</a></li>
                     <li class="nav-link"><a href="guide/get-started.html">快速上手</a></li>
-                    <li class="nav-link"><a href="guide/directory-structure.html">目录结构</a></li>
+                    <li class="section-1 nav-link active"><a href="#section-1">目录结构</a></li>
                     <li class="nav-link"><a href="">模板插件</a></li>
                     <li class="nav-link"><a href="">第三方资源</a></li>
                     <li class="nav-link"><a href="">多语言支持</a></li>
@@ -197,104 +185,74 @@
             <!--Sidebar menu for desktop End-->
             <div class="main-content">
                 <section id="section-1">
-                    <h2 class="tab-title">MacCms V10.x</h2>
-                    <div class="git-informs">
-                        <div class="issues" id="issues">
-                            <div class="title">issues</div>
-                            15 Open
-                        </div>
-                        <div class="forks" id="forks">
-                            <div class="title">forks</div>
-                            655
-                        </div>
-                        <div class="stars" id="stars">
-                            <div class="title">stars</div>
-                            1.8k
-                        </div>
-                        <div class="php-v" id="php-v">
-                            <div class="title">php</div>
-                            >=5.6.x
-                        </div>
-                        <div class="mysql-v" id="mysql-v">
-                            <div class="title">MySQL</div>
-                            >=5.5.x
+                    <h2>目录结构</h2>
+                    <h4>VuePress 遵循 “约定优于配置” 的原则，推荐的目录结构如下：</h4>
+                    <div class="struct">
+                        <div class="struct-body">
+                            <div class="struct-space">
+                                <ul class="struct-space-list">
+                                    <li class="struct-line"><div class="struct-space-1"></div>- application &nbsp;//应用目录</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- admin &nbsp;//后台模块</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- api &nbsp;//api模块</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- common &nbsp;//公共模块</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- extra &nbsp;//配置文件</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- index &nbsp;//前台模块</li>
+                                    <li class="struct-line"><div class="struct-space-2"></div>- install &nbsp;//安装模块</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- extend &nbsp;//扩展目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- runtime &nbsp;//缓存目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- static &nbsp;//静态文件目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- template &nbsp;//前台模板目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- thinkphp &nbsp;//tp目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- upload &nbsp;//附件目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- wendor &nbsp;//第三发库目录</li>
+                                    <li class="struct-line"><div class="struct-space-1"></div>- index.php &nbsp;//入口文件</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="link-pannel">
-                        <a href="#">下载</a>
-                        <a href="#">官网</a>
-                        <a href="#">飞机群</a>
-                        <a href="#">第三方社区</a>
-                        <a href="#">Github</a>
+                    <div class="bd-danger">
+                        <p class="title">注意</p>
+                        <p class="description">为了安全起见后台入口 <u>admin.php</u> 必须自定义名称。</p> 
+                    </div>
+                    <div class="tab-paragraph">
+                        <p><r>application</r> : 标准 tp5 应用目录，存放程序所有模型、控制器和配置文件。</p>
+                        <p><r>application/extra/maccms.php</r> : 后台所有配置参数。</p>
+                        <p><r>application/extra/addons.php</r> : 已安装的第三方应用配置。</p>
+                        <p><r>application/extra/domain.php</r> : 站群域名配置。</p>
+                        <p><r>application/extra/timming.php</r> : 定制任务配置。</p>
+                        <p><r>application/extra/vodplayer.php</r> : 已安装播放器配置。</p>
+                        <p><r>application/extra/voddowner.php</r> : 已安装下载器配置。</p>
+                        <p><r>application/data/backup</r> : 备份数据目录，后台备份数据就在这个目录里面。</p>
+                        <p><r>application/data/config</r> : 后台自定义菜单配置。</p>
+                        <p><r>application/data/install</r> : 初始安装目录，如需重新安装，把里面的 install.lock删除即可重进就如安装步骤。</p>
+                        <p><r>application/route.php</r> : 伪静态路由文件，如果后台写错路由导致后台无法访问，删除这个文件即可正常。</p>
+                        <p><r>application/database.php</r> : MySQL数据库连接配置文件。</p>
+                        <p><r>addons</r> : 用于存放大三方应用插件目录，购买的插件可以放在这里。</p>
+                        <p><r>template</r> : 主题模板目录，用于存放前台模板的目录。</p>
+                        <p><r>static</r> : 用于存储默认css 和 js 等静态文件。</p>
                     </div>
                     <div class="bd-info">
-                        <p class="title">特色</p>
-                        <p class="description">v10采用 <green>ThinkPHP5.x </green>(opens new
-                            window)内核进行开发，扩展了模板处理引擎，将后台程序与html模板简单的分离出来，让设计人员与程序人员最大限度的发挥自己的优势而互不干扰，大大加快了项目有序、快速的完成。
-                            即使您是第一次接触，也会在最短的时间内熟练掌握它的使用方法。后台管理模块，一目了然，操作简单，绝对不会让您眼花缭乱。</p>
+                        <p class="title">安全小技巧</p>
+                        <p>为了安全起见，最好使用新版宝塔面板的目录锁限制访问功能将一下目录全部限制访问，就算是被挂马也大碍！</p>
+                        <ul class="description" style="list-style-type:circle;">
+                            <li>/application/ :限制php文件访问</li>
+                            <li>/addons/ :限制php文件访问</li>
+                            <li>/extend/ :限制php文件访问</li>
+                            <li>/thinkphp/ :限制php文件访问</li>
+                            <li>/vendor/ :限制php文件访问</li>
+                            <li>/upload/ :限制php文件访问</li>
+                          </ul>
                     </div>
                 </section>
-                <section id="section-2">
-                    <h3 class="subtitle">程序介绍</h3>
-                    <p class="tab-paragraph">
-                        <red>苹果CMS</red> 程序是一套采用 <red>PHP + MYSQL</red> 环境下运行的完善而强大的快速建站系统。
-                        经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。
-                        程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
-                        仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。
-                        程序易用性和功能上一直以来都积极采纳广大站长提出的各种好的建议，迅速响应各种紧急问题，我们的服务理念贯穿其中，保证每一位站长每一个环节都可以从容应对。
-                    </p>
-                </section>
-                <section id="section-3">
-                    <h3 class="subtitle">苹果CMS能做什么？</h3>
-                    <p class="tab-paragraph">苹果CMS功能非常强大，模块丰富。可以用于搭建专业的视频站如：<red>收费网课类</red>、<red>教学资料站</red>，也可以用于搭
-                        <red>建群站</red>、<red>文章资讯站</red>、<red>图片素材站</red>、<red>网址导航站</red> 等等类型，还可以扩展开发搭建移动APP的服务端。
-                        苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。
-                    </p>
-                </section>
-                <section id="section-4">
-                    <h3 class="subtitle">传送门</h3>
-                    <p class="tab-paragraph">
-                    <ul class="sub-contents-green">
-                        <li><a href="#">- 下载</a></li>
-                        <li><a href="#">- 安装</a></li>
-                        <li><a href="#">- 升级</a></li>
-                        <li aria-disabled="true">...</li>
-                    </ul>
-                    </p>
-
-                    <h3 class="subtitle">常用配置</h3>
-                    <p class="tab-paragraph">
-                    <ul class="sub-contents-green">
-                        <li><a href="#">- 采集配置</a></li>
-                        <li><a href="#">- 伪静态</a></li>
-                        <li><a href="#">- 定时任务</a></li>
-                        <li><a href="#">- 群站配置</a></li>
-                        <li><a href="#">- 短信发送</a></li>
-                        <li aria-disabled="true">...</li>
-                    </ul>
-                    </p>
-
-                    <h3 class="subtitle">插件</h3>
-                    <p class="tab-paragraph">
-                    <ul class="sub-contents-green">
-                        <li><a href="#">- 如何安装插件？</a></li>
-                        <li><a href="#">- 如何开发苹果cms插件？</a></li>
-                        <li><a href="#">- 系统功能模块预留扩展方式</a></li>
-                        <li><a href="#">- 播放器相关</a></li>
-                        <li aria-disabled="true">...</li>
-                    </ul>
-                    </p>
-
-                    <div class="bd-danger">
-                        <p class="title">免责声明</p>
-                        <p class="description">本程序仅供内部学习和交流使用，没有内置任何数据，请在遵守当地法律的前提下使用本站程序，对用户在使用过程中的自行维护的信息内容本站不负任何责任！
-                        </p>
-                    </div>
-                </section>
+                
                 <!--Prev, Next-->
                 <div class="prev-next">
                     <a href="guide/get-started.html">
+                        <img class="arrow-right" src="assets/images/com_ic_arrow_left.svg">
                         快速上手
+                    </a>
+                    <a href="">
+                        模板插件 
                         <img class="arrow-right" src="assets/images/com_ic_arrow_right.svg">
                     </a>
                 </div>

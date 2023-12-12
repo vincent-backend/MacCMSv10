@@ -53,7 +53,7 @@ p green {
   color: #40cc92;
 }
 
-p red {
+p r {
   color: #d85252;
 }
 
@@ -531,6 +531,67 @@ select option {
   word-break: break-all;
 }
 
+.struct {
+  width: 100%;
+  border: 1px solid #E2E2E2;
+}
+.struct-header {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E2E2E2;
+  padding-left: 17px;
+}
+.struct-body {
+  display: flex;
+  flex-direction: row;
+}
+.struct-num {
+  width: 60px;
+  height: 100%;
+  background: #F2F2F2;
+  border-right: 1px solid #E2E2E2;
+  text-align: center;
+}
+.struct-num-list {
+  display: block;
+  list-style-type: none;
+  padding: 6px 0 0 0;
+  line-height: 26px;
+}
+
+.struct-space {
+  width: 100%;
+  padding: 6px 0 0 20px;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+.struct-space-list {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  line-height: 26px;
+}
+.struct-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.struct-space-1 {
+  width: 2px;
+  height: 16px;
+  background: #4D5366;
+  margin-right: 4px;
+}
+.struct-space-2 {
+  width: 24px;
+  height: 16px;
+  border-left: 2px solid #4D5366;
+  border-right: 2px solid #4D5366;
+  margin-right: 4px;
+}
+
 /**** Responsive design >768 ****/
 @media (min-width: 768px) {
   /** Global **/
@@ -745,6 +806,7 @@ select option {
 
   .container .main-content {
     padding-left: 80px;
+    flex-grow: 1;
   }
 
   .subtitle {
