@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>苹果cmsV10</title>
-    <base href="" />
+    <base href="../" />
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!--Global CSS-->
@@ -56,7 +56,13 @@
                         style="font-size: 24px; font-weight: 700;"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+                        <li class="nav-item search-h5">
+                            <div class="input-group">
+                                <input type="text" id="search-input-h5" class="search-click-h5" />
+                                <div class="search-icon"></div>
+                            </div>
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="index.html">指南</a>
                         </li>
@@ -123,10 +129,17 @@
                         </li>
                         <li class="menu-splitter"></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/maccms/">
+                            <a class="nav-link" href="https://github.com/magicblack/maccms10">
                                 Github
                                 <img src="assets/images/nav_ic_Share.svg">
                             </a>
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item search-md">
+                            <div class="input-group">
+                                <input type="text" id="search-input" class="search-click" />
+                                <div class="search-icon"></div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -145,16 +158,16 @@
                     <button class="nav-link nav-link-disabled" disabled>基础说明</button>
                     <a class="nav-link active" href="" aria-selected="true">MacCms V10.x</a>
                     <a class="nav-link " href="guide/get-started.html">快速上手</a>
-                    <a class="nav-link " href="configuration/index.html">目录结构</a>
-                    <a class="nav-link " href="configuration/index.html">模板插件</a>
-                    <a class="nav-link " href="configuration/index.html">第三方资源</a>
-                    <a class="nav-link " href="configuration/index.html">多语言支持</a>
-                    <a class="nav-link " href="configuration/index.html">更新日志</a>
-                    <a class="nav-link " href="configuration/index.html">常用SQL语句</a>
+                    <a class="nav-link " href="guide/directory-structure.html">目录结构</a>
+                    <a class="nav-link " href="guide/template-plugin.html">模板插件</a>
+                    <a class="nav-link " href="guide/third-party-resources.html">第三方资源</a>
+                    <a class="nav-link " href="guide/index.html">多语言支持</a>
+                    <a class="nav-link " href="guide/index.html">更新日志</a>
+                    <a class="nav-link " href="guide/index.html">常用SQL语句</a>
                     <button class="nav-link  nav-link-disabled mt-4" disabled>其他</button>
-                    <a class="nav-link " href="configuration/index.html">常见问题</a>
-                    <a class="nav-link " href="configuration/index.html">程序安全</a>
-                    <a class="nav-link " href="configuration/index.html">捐赠支持</a>
+                    <a class="nav-link " href="guide/index.html">常见问题</a>
+                    <a class="nav-link " href="guide/index.html">程序安全</a>
+                    <a class="nav-link " href="guide/index.html">捐赠支持</a>
                 </div>
             </div>
         </div>
@@ -182,9 +195,9 @@
                         </a>
                     </li>
                     <li class="nav-link"><a href="guide/get-started.html">快速上手</a></li>
-                    <li class="nav-link"><a href="">目录结构</a></li>
-                    <li class="nav-link"><a href="">模板插件</a></li>
-                    <li class="nav-link"><a href="">第三方资源</a></li>
+                    <li class="nav-link"><a href="guide/directory-structure.html">目录结构</a></li>
+                    <li class="nav-link"><a href="guide/template-plugin.html">模板插件</a></li>
+                    <li class="nav-link"><a href="guide/third-party-resources.html">第三方资源</a></li>
                     <li class="nav-link"><a href="">多语言支持</a></li>
                     <li class="nav-link"><a href="">更新日志</a></li>
                     <li class="nav-link"><a href="">常用SQL语句</a></li>
@@ -237,7 +250,7 @@
                 <section id="section-2">
                     <h3 class="subtitle">程序介绍</h3>
                     <p class="tab-paragraph">
-                        <red>苹果CMS</red> 程序是一套采用 <red>PHP + MYSQL</red> 环境下运行的完善而强大的快速建站系统。
+                        <r>苹果CMS</r> 程序是一套采用 <r>PHP + MYSQL</r> 环境下运行的完善而强大的快速建站系统。
                         经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。
                         程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
                         仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。
@@ -246,8 +259,8 @@
                 </section>
                 <section id="section-3">
                     <h3 class="subtitle">苹果CMS能做什么？</h3>
-                    <p class="tab-paragraph">苹果CMS功能非常强大，模块丰富。可以用于搭建专业的视频站如：<red>收费网课类</red>、<red>教学资料站</red>，也可以用于搭
-                        <red>建群站</red>、<red>文章资讯站</red>、<red>图片素材站</red>、<red>网址导航站</red> 等等类型，还可以扩展开发搭建移动APP的服务端。
+                    <p class="tab-paragraph">苹果CMS功能非常强大，模块丰富。可以用于搭建专业的视频站如：<r>收费网课类</r>、<r>教学资料站</r>，也可以用于搭
+                        <r>建群站</r>、<r>文章资讯站</r>、<r>图片素材站</r>、<r>网址导航站</r> 等等类型，还可以扩展开发搭建移动APP的服务端。
                         苹果cms的模板丰富，网络上有海量的免费模板可以使用，无需编程基础即可极速搭建网站。
                     </p>
                 </section>

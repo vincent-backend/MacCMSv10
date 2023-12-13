@@ -382,6 +382,15 @@ select option {
   line-height: 34px;
 }
 
+.tab-paragraph > a {
+  color: #4D5366 !important;
+}
+.tab-paragraph > a:hover,
+.tab-paragraph > a:active {
+  color: #40CC92 !important;
+  text-decoration: underline !important;
+}
+
 .sub-contents-green {
   padding: 0;
   line-height: 45px;
