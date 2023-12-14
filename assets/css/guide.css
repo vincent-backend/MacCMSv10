@@ -296,10 +296,6 @@ header {
 }
 
 /** Footer **/
-footer {
-  padding-bottom: 50px;
-}
-
 .footer-download {
   padding-top: 40px;
 }
@@ -369,7 +365,7 @@ select option {
 
 .container {
   margin-top: 50px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .subtitle {
@@ -831,10 +827,6 @@ select option {
   }
 
   /*Footer*/
-  footer {
-    padding-bottom: 50px;
-  }
-
   .footer-download {
     padding-top: 40px;
   }
