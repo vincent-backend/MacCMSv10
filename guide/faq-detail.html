@@ -350,7 +350,8 @@
                     </div>
                     <p class="tab-paragraph">该错误就插入字段长度超过设定的长度，一般程序会在数据库字段设置字符长度在插入之前程序很少会先判断数据长度和截取数据 这样会影响性能，所以你就需要修改你数据库的配置文件一般在 
                         <r>MYSQL</r> 安装目录中的 <r>my.ini</r> 中 搜索 <r>sql-mode sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 把其中的 <r>STRICT_TRANS_TABLES</r>,
-                         去掉 建议使用该方法 <r>sql-mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 或者把 <r>sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 直接删除</p>
+                         去掉 建议使用该方法 <r>sql-mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 或者把 <r>sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 直接删除
+                    </p>
                 </section>
                 <section id="faq-6">
                     <h3 class="subtitle">数据库连接配置文件。</h3>
