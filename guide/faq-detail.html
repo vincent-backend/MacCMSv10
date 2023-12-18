@@ -158,7 +158,7 @@
                     <button class="nav-link nav-link-disabled" disabled>基础说明</button>
                     <a class="nav-link" href="index.html">MacCms V10.x</a>
                     <a class="nav-link" href="guide/get-started.html">快速上手</a>
-                    <a class="nav-link" href="guide/directory-structure.html">目录结构</a>
+                    <a class="nav-link" href="guide/directory-dcodeure.html">目录结构</a>
                     <a class="nav-link" href="guide/template-plugin.html">模板插件</a>
                     <a class="nav-link" href="guide/third-party-resources.html">第三方资源</a>
                     <a class="nav-link" href="guide/multi-language-support.html">多语言支持</a>
@@ -206,28 +206,231 @@
                         </button>
                     </div>
                     <ul class="faq-list">
-                        <li class="nav-link active"></li> ><a href="guide/faq-detail.html#faq-1">开启假墙攻击防御解决筛选页高亮问题</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-2">为什么无法在线播放</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-3">上传失败常见问题</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-4">运行安装页面出现空白页面</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-5">提示_SQLSTATE_22001</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-6">数据库连接配置文件。</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-7">如何重装苹果cms？</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-8">采集资源为何播放不了？</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-9">宝塔Nginx环境404</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-10">采集完数据后为何无法播放？？？</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-11">为何新增加了分类，前台页面进入提示没有权限？？？</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-12">改乱了怎么办？</a></li>
-                        <li class="nav-link"><a href="guide/faq-detail.html#faq-13">nginx下除了首页其他都是404怎么办？</a></li>
+                        <li class="faq-1 nav-link"><a href="#faq-1">开启假墙攻击防御解决筛选页高亮问题</a></li>
+                        <li class="faq-2 nav-link"><a href="#faq-2">为什么无法在线播放</a></li>
+                        <li class="faq-3 nav-link"><a href="#faq-3">上传失败常见问题</a></li>
+                        <li class="faq-4 nav-link"><a href="#faq-4">运行安装页面出现空白页面</a></li>
+                        <li class="faq-5 nav-link"><a href="#faq-5">提示_SQLSTATE_22001</a></li>
+                        <li class="faq-6 nav-link"><a href="#faq-6">数据库连接配置文件。</a></li>
+                        <li class="faq-7 nav-link"><a href="#faq-7">如何重装苹果cms？</a></li>
+                        <li class="faq-8 nav-link"><a href="#faq-8">采集资源为何播放不了？</a></li>
+                        <li class="faq-9 nav-link"><a href="#faq-9">宝塔Nginx环境404</a></li>
+                        <li class="faq-10 nav-link"><a href="#faq-10">采集完数据后为何无法播放？？？</a></li>
+                        <li class="faq-11 nav-link"><a href="#faq-11">为何新增加了分类，前台页面进入提示没有权限？？？</a></li>
+                        <li class="faq-12 nav-link"><a href="#faq-12">改乱了怎么办？</a></li>
+                        <li class="faq-13 nav-link"><a href="#faq-13">nginx下除了首页其他都是404怎么办？</a></li>
+                        <li class="faq-14 nav-link"><a href="#faq-14">页面提交数据后过段时间才生效</a></li>
+                        <li class="faq-15 nav-link"><a href="#faq-15">为什么播放器不能全屏？</a></li>
                     </ul>
                 </div>
-
             </div>
             <!--Sidebar menu for desktop End-->
             <div class="main-content">
-                <section>
-                    <h2>常见问题</h2>
-                    
+                <h2>常见问题</h2>
+                <section id="faq-1">
+                    <h3 class="subtitle">开启假墙防御后搜索页筛选页的选项参数如何高亮展示</h3>
+                    <p>为了防御假墙我们把url参数编码方式或空白方式处理掉了。关闭假墙防御就不会出现这个问题。</p>
+                    <p>那么原来使用搜索页面、分类筛选页面的模板可能需要做有些简单调整才能正确显示筛选高亮。 在模板头部插入定义变量（在调用$pp变量之前插入就可以） <r>{php}$pp = mac_param_url(); {/php}</r> 然后把原来判断高亮的代码修改一下即可，
+                        把 <r>$param</r> 替换为 <r>$pp</r> 即可， 来看例子。</p>
+                    <h4>未修改的地区筛选：</h4>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>01.</li>
+                                    <li>02.</li>
+                                    <li>03.</li>
+                                    <li>04.</li>
+                                    <li>05.</li>
+                                    <li>06.</li>
+                                    <li>07.</li>
+                                    <li>08.</li>
+                                    <li>09.</li>
+                                    <li>10.</li>
+                                    <li>11.</li>
+                                    <li>12.</li>
+                                    <li>13.</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space" style="overflow-x: scroll;">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">
+                                        &lt;a {if condition="$param['area'] eq ''"} class="current" {/if} href="{:mac_url_type($obj,['area'=>'','lang'=>$param['lang'],'year=&gt;
+                                    </li>
+                                    <li class="dcode-line">&nbsp;</li>
+                                    <li class="dcode-line">
+                                        {empty name="$obj.type_extend.area"}
+                                    </li>
+                                    <li class="dcode-line">
+                                        {maccms:foreach name=":explode(',',$obj.parent.type_extend.area)" id="vo2" key="key2"}
+                                    </li>
+                                    <li class="dcode-line">
+                                        &lt;a {if condition="$param['area'] eq $vo2"} class="current" {/if} href="{:mac_url_type($obj,['area'=>$vo2,'lang'=>$param['lang'],'
+                                    </li>
+                                    <li class="dcode-line">&nbsp;</li>
+                                    <li class="dcode-line">
+                                        {/maccms:foreach}
+                                    </li>
+                                    <li class="dcode-line">{else /}</li>
+                                    <li class="dcode-line">{maccms:foreach name=":explode(',',$obj.type_extend.area)" id="vo2" key="key2"}</li>
+                                    <li class="dcode-line">
+                                        &lt;a {if condition="$param['area'] eq $vo2"} class="current" {/if} href="{:mac_url_type($obj,['area'=>$vo2,'lang'=>$param['lan
+                                    </li>
+                                    <li class="dcode-line">&nbsp;</li>
+                                    <li class="dcode-line">{/maccms:foreach}</li>
+                                    <li class="dcode-line">{/empty}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>修改后的代码是：</h4>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space" style="overflow-x: scroll;">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">
+                                        &lt;a {if condition="$pp['area'] eq ''"} class="current" {/if} href="{:mac_url_type($obj,['area'=>'','lang'=>$pp['lang'],'year'=>$pp['ye
+                                    </li>
+                                    <li class="dcode-line">
+                                        {empty name="$obj.type_extend.area"} {maccms:foreach name=":explode(',',$obj.parent.type_extend.area)" id="vo2" key="key2
+                                    </li>
+                                    <li class="dcode-line">
+                                        &lt;a {if condition="$pp['area'] eq $vo2"} class="current" {/if} href="{:mac_url_type($obj,['area'=>$vo2,'lang'=>$pp['lang'],'year'=>
+                                    </li>
+                                    <li class="dcode-line">
+                                        {/maccms:foreach} {else /} {maccms:foreach name=":explode(',',$obj.type_extend.area)" id="vo2" key="key2"}
+                                    </li>
+                                    <li class="dcode-line">
+                                        &lt;a {if condition="$pp['area'] eq $vo2"} class="current" {/if} href="{:mac_url_type($obj,['area'=>$vo2,'lang'=>$pp['lang'],'year'=>
+                                    </li>
+                                    <li class="dcode-line">{/maccms:foreach} {/empty}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="faq-2">
+                    <h3 class="subtitle">为什么无法在线播放?</h3>
+                    <p>程序只提供数据管理功能，无法直接实现站内播放功能，如有需要请自行整合第三方提供的插件。</p>
+                </section>
+                <section id="faq-3">
+                    <h3 class="subtitle">上传失败常见问题？</h3>
+                    <p>由于采用最新的TP框架，需要开启php的fileinfo支持库，php.ini里 extension=php_fileinfo.dll；宝塔等面板里直接安装开启 。 
+                        上传失败问题请检查php临时文件目录权限和cms系统文件存储目录权限。 windows一般是：C:/windows/temp，``linux一般是/var/tmp。 cms存储目录upload。 
+                        如果开启第三方存储，请检查三方存储配置信息。 也可能是php.ini配置文件里post和upload大小限制，修改的值大一些即可。 upload_max_filesize = 8M post_max_size = 10M
+                    </p>
+                    <div class="bd-info">
+                        <p class="title">TIP</p>
+                        <p class="description">
+                            如果使用的是php5.6版本（php7版本不受影响），还需要设置 <r>php.ini</r> 开启 <br>
+                            <r>always_populate_raw_post_data = -1</r> 这个选项，也就是去掉这项配置前面的分号即可。
+                        </p>
+                    </div>
+                </section>
+                <section id="faq-4">
+                    <h3 class="subtitle">运行安装页面出现空白页面</h3>
+                    <p>该情况一般为Runtime目录没有修改写入权限</p>
+                </section>
+                <section id="faq-5">
+                    <h3 class="subtitle">提示 SQLSTATE_22001</h3>
+                    <div class="bd-info">
+                        <div class="title">TIP</div>
+                        <p class="description">SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column '' at row 1 或者 Warning:<br>
+                            1265 Data truncated for column 类似错误</p>
+                    </div>
+                    <p class="tab-paragraph">该错误就插入字段长度超过设定的长度，一般程序会在数据库字段设置字符长度在插入之前程序很少会先判断数据长度和截取数据 这样会影响性能，所以你就需要修改你数据库的配置文件一般在 
+                        <r>MYSQL</r> 安装目录中的 <r>my.ini</r> 中 搜索 <r>sql-mode sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 把其中的 <r>STRICT_TRANS_TABLES</r>,
+                         去掉 建议使用该方法 <r>sql-mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 或者把 <r>sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"</r> 直接删除</p>
+                </section>
+                <section id="faq-6">
+                    <h3 class="subtitle">数据库连接配置文件。</h3>
+                    <p>RE:手动修改数据库连接信息，数据库密码等/application/database.php</p>
+                </section>
+                <section id="faq-7">
+                    <h3 class="subtitle">如何重装苹果cms？</h3>
+                    <p>RE:手动修改数据库连接信息，数据库密码等/application/database.php</p>
+                </section>
+                <section id="faq-8">
+                    <h3 class="subtitle">采集资源为何播放不了？</h3>
+                    <p>（资源类型是youku、tudou、iqiyi等等）第三方网址</p>
+                    <p>- 方法1，整合资源站的播放器js文件。</p>
+                    <p>- 方案2，开启全局解析或独立解析和播放器解析状态。</p>
+                </section>
+                <section id="faq-9">
+                    <h3 class="subtitle">宝塔Nginx环境404？</h3>
+                    <p>宝塔Nginx环境下，程序安装完毕后除非首页其他页面全部404的问题？ RE:方法，进入宝塔软件设置，找到对应的php版本-设置，安装扩展，找到PATH_INFO这项，点击关闭，然后重新安装一下就ok了，这个可能是宝塔的bug。</p>
+                </section>
+                <section id="faq-10">
+                    <h3 class="subtitle">采集完数据后为何无法播放？</h3>
+                    <p>RE:检查采集数据的播放地址，如果是完成的http地址，则需要开启播放器的解析状态用解析播放；如果采集的数据ID可会直接用本地播放器来播放。</p>
+                </section>
+                <section id="faq-11">
+                    <h3 class="subtitle">为何新增加了分类，前台页面进入提示没有权限？</h3>
+                    <p>RE:因为新加的分类默认所有会员组都是没有权限的，需要进入会员组里配置每个组的分类权限，保存一下即可。</p>
+                </section>
+                <section id="faq-12">
+                    <h3 class="subtitle">改乱了怎么办？</h3>
+                    <p>- 路由规则改错了，页面权都打不开了，怎么恢复到默认的？</p>
+                    <p>- 下载完整安装包，复制application/route.php 替换到网站里，就可以打开了，然后在后台重新修改下路由规则。</p>
+                </section>
+                <section id="faq-13">
+                    <h3 class="subtitle">nginx下除了首页其他都是404怎么办？</h3>
+                    <p>修改一下伪静态规则，一般都可以解决了。 如果修改了后台文件入口admin.php，则改为对应的文件名。</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space" style="overflow-x: scroll;">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">
+                                        if (!-e $request_filename) {
+                                    </li>
+                                    <li class="dcode-line">
+                                        &nbsp;  rewrite ^/index.php(.*)$ /index.php?s=$1 last;
+                                    </li>
+                                    <li class="dcode-line">
+                                        &nbsp;  rewrite ^/admin.php(.*)$ /admin.php?s=$1 last;
+                                    </li>
+                                    <li class="dcode-line">
+                                        &nbsp;  rewrite ^/api.php(.*)$ /api.php?s=$1 last;
+                                    </li>
+                                    <li class="dcode-line">
+                                        &nbsp;  rewrite ^(.*)$ /index.php?s=$1 last;
+                                    </li>
+                                    <li class="dcode-line">&nbsp;  break;</li>
+                                    <li class="dcode-line">}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="faq-14">
+                    <h3 class="subtitle">页面提交数据后过段时间才生效</h3>
+                    <p>这个一般是web服务配置了缓存导致的~~ 访问 <r>phpinfo()</r>, 看看是不是你开启了 <r>ZendOpcache</r> 之类的 <r>opcode</r> 缓存.
+                         <r>ZendOpcache</r> 里面有个过期时间配置,如 <r>opcache . revalidate_freq=60</r>, 表示60秒后脚本再次被访问时会检测PHP文件的时间戳,有改变则更新opcode缓存,你可以设为0,这样每次访问都会检测文件时间戳,你的修改就能生效了.
+                          在 <r>php.ini</r> 文件中找到 <r>opcache.enable=1</r> 或 <r>opcache.enable_cli=1</r> 改为 0，重启 <r>php-fpm，done</r></p>
+                </section>
+                <section id="faq-15">
+                    <h3 class="subtitle">为什么播放器不能全屏？</h3>
                 </section>
 
                 <!--Prev, Next-->

@@ -40,6 +40,7 @@ h4 {
   font-weight: bold;
   color: #323643;
   line-height: 30px;
+  margin: 20px 0 20px 0;
 }
 
 p {
@@ -88,6 +89,10 @@ body {
   font-size: 24px;
   color: #05031a;
   margin: 10px 0 0 10px;
+}
+
+section {
+  max-width: 100%;
 }
 
 .search-click {
@@ -653,11 +658,12 @@ select option {
   word-break: break-all;
 }
 
-.struct {
+.dcode {
   width: 100%;
   border: 1px solid #e2e2e2;
+  flex-grow: 0;
 }
-.struct-header {
+.dcode-header {
   width: 100%;
   height: 38px;
   line-height: 38px;
@@ -665,43 +671,45 @@ select option {
   border-bottom: 1px solid #e2e2e2;
   padding-left: 17px;
 }
-.struct-body {
+.dcode-body {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
-.struct-num {
+.dcode-num {
   width: 60px;
   height: 100%;
   background: #f2f2f2;
   border-right: 1px solid #e2e2e2;
   text-align: center;
 }
-.struct-num-list {
+.dcode-num-list {
   display: block;
   list-style-type: none;
   padding: 6px 0 0 0;
   line-height: 26px;
 }
 
-.struct-space {
+.dcode-space {
   width: 100%;
   padding: 6px 0 0 20px;
   background-color: #ffffff;
   overflow-x: scroll;
 }
-.struct-space-list {
+.dcode-space-list {
   display: block;
   list-style-type: none;
   padding: 0;
   line-height: 26px;
+  max-width: 100%;
   white-space: nowrap;
 }
-.struct-line {
+.dcode-line {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.struct-space-1 {
+.dcode-space-1 {
   min-width: 2px;
   max-width: 2px;
   height: 16px;
@@ -709,7 +717,7 @@ select option {
   margin-right: 4px;
   white-space: pre-wrap;
 }
-.struct-space-2 {
+.dcode-space-2 {
   min-width: 24px;
   max-width: 24px;
   height: 16px;
@@ -768,6 +776,7 @@ select option {
     color: #05031a;
     font-size: 16px;
     line-height: 22px;
+    margin: 20px 0 20px 0;
   }
 
   p {
@@ -879,6 +888,7 @@ select option {
     position: relative;
     min-width: 230px;
     max-width: 230px;
+    height: 700px;
     overflow-x: hidden;
     border-right: 1px solid #d9e6e7;
   }
@@ -941,7 +951,7 @@ select option {
   .sidebar > .faq-menu {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 650px;
     background-color: #ffffff;
     left: 0;
     top: 0;
@@ -985,9 +995,10 @@ select option {
     font-weight: 500;
   }
 
-  .container .main-content {
+  .container-inner .main-content {
     padding-left: 80px;
     flex-grow: 1;
+    overflow-x: clip;
   }
 
   .subtitle {
