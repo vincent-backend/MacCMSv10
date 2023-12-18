@@ -876,7 +876,10 @@ select option {
 
   .sidebar {
     display: block;
+    position: relative;
     min-width: 230px;
+    max-width: 230px;
+    overflow-x: hidden;
     border-right: 1px solid #d9e6e7;
   }
 
@@ -933,6 +936,42 @@ select option {
 
   .sidebar .nav-link.active a {
     color: #40cc92 !important;
+  }
+
+  .sidebar > .faq-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .faq-menu.close {
+    transform: translateX(-100%);
+  }
+
+  .faq-menu.open {
+    transform: translateX(100%);
+  }
+
+  .faq-menu > .faq-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq-menu > .faq-list  {
+    padding-left: 0;
+  }
+
+  .faq-menu > .faq-list > li {
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 24px;
   }
 
   select {
