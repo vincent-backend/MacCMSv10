@@ -162,12 +162,12 @@
                     <a class="nav-link" href="guide/template-plugin.html">模板插件</a>
                     <a class="nav-link" href="guide/third-party-resources.html">第三方资源</a>
                     <a class="nav-link active" href="guide/multi-language-support.html" aria-selected="true">多语言支持</a>
-                    <a class="nav-link " href="guide/change-log.html">更新日志</a>
-                    <a class="nav-link " href="guide/index.html">常用SQL语句</a>
+                    <a class="nav-link" href="guide/change-log.html">更新日志</a>
+                    <a class="nav-link" href="guide/sql-statement.html">常用SQL语句</a>
                     <button class="nav-link  nav-link-disabled mt-4" disabled>其他</button>
-                    <a class="nav-link " href="guide/faq.html">常见问题</a>
+                    <a class="nav-link" href="guide/faq.html">常见问题</a>
                     <a class="nav-link" href="guide/program-security.html">程序安全</a>
-                    <a class="nav-link " href="guide/donate.html">捐赠支持</a>
+                    <a class="nav-link" href="guide/donate.html">捐赠支持</a>
                 </div>
             </div>
         </div>
@@ -188,7 +188,7 @@
                     <li class="nav-link"><a href="guide/third-party-resources.html">第三方资源</a></li>
                     <li class="section-1 nav-link active"><a href="#section-1">多语言支持</a></li>
                     <li class="nav-link"><a href="guide/change-log.html">更新日志</a></li>
-                    <li class="nav-link"><a href="">常用SQL语句</a></li>
+                    <li class="nav-link"><a href="guide/sql-statement.html">常用SQL语句</a></li>
                     <li class="nav-link nav-link-disabled" disabled>其他</li>
                     <li class="nav-link"><a href="guide/faq.html">常见问题</a></li>
                     <li class="nav-link"><a href="guide/program-security.html">程序安全</a></li>
@@ -197,10 +197,51 @@
             </div>
             <!--Sidebar menu for desktop End-->
             <div class="main-content">
-                <section id="section-1">
-                    <h2>多语言支持</h2>
-                    <h4>Page design cannot be found.</h4>
-                </section>
+                <h2>多语言支持</h2>
+                <p>v10版本增加了多语言的支持，方便更多全球用户使用，系统内所有显示和提示的信息完全由语言包控制。
+                     系统默认内置了简体中文，繁体中文语言包，安装的时候选择切换您熟悉的语言即可在 安装、后台中完全显示对应的语言，所有模块提示信息也将显示对应语言。
+                     后续还将内置或提供更多的语言包扩展，也欢迎大家友情提供。 建议不要修改公共语言包，如果想替换公共语言包里的内容，可以到对应的模块语言包下创建同样key的内容即可自动加载替换。
+                </p>
+                <div class="dcode">
+                    <div class="dcode-body">
+                        <div class="dcode-num">
+                            <ul class="dcode-num-list">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                            </ul>
+                        </div>
+                        <div class="dcode-space" style="overflow-x: scroll;">
+                            <ul class="dcode-space-list">
+                                <li class="dcode-line">==语言包结构=</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>- application/</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>- lang/ 公共语言包</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>— zh-cn.php 简体中文</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>— zh-tw.php 繁体中文</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>- …</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>- admin/lang/ admin模块自定义语言包</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>— zh-cn.php</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>— zh-cn.php</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>- …</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>- api/lang/ api模块自定义语言包</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>— zh-cn.php</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>— zh-tw.php</li>
+                                <li class="dcode-line"><div class="dcode-space-2"></div>- …</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 
                 <!--Prev, Next-->
                 <div class="prev-next">

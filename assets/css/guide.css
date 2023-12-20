@@ -686,15 +686,22 @@ select option {
 .dcode-num-list {
   display: block;
   list-style-type: none;
-  padding: 6px 0 0 0;
+  padding: 15px 0 5px 0;
   line-height: 26px;
 }
 
 .dcode-space {
+  position: relative;
   width: 100%;
-  padding: 6px 0 0 20px;
+  padding: 15px 10px 5px 20px;
   background-color: #ffffff;
-  overflow-x: scroll;
+  overflow-x: auto;
+}
+.dcode-space .code-style {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  opacity: 0.5;
 }
 .dcode-space-list {
   display: block;
@@ -708,6 +715,21 @@ select option {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.dcode-line m {
+  color: #BA6DBC;
+}
+.dcode-line bl {
+  color: #51A4F3;
+}
+.dcode-line y {
+  color: #F38215;
+}
+.dcode-line g {
+  color: #40CC92;
+}
+.dcode-line hint {
+  opacity: 0.5;
 }
 .dcode-space-1 {
   min-width: 2px;

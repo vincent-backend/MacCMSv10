@@ -100,9 +100,9 @@
                                     <li><a class="dropdown-item" href="#">网站搬家</a></li>
                                 </ul>
                             </div>
-                        </li>        
-                        <li class="menu-s menu-splitter"></li>
-                        <li class="nav-item menu-s">
+                        </li>
+                        <li class="menu-splitter"></li>
+                        <li class="nav-item">
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -114,7 +114,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menu-s menu-splitter"></li>
+                        <li class="menu-splitter"></li>
                         <li class="nav-item">
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -127,7 +127,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menu-splitter menu-s"></li>
+                        <li class="menu-splitter"></li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://github.com/magicblack/maccms10">
                                 Github
@@ -163,11 +163,11 @@
                     <a class="nav-link" href="guide/third-party-resources.html">第三方资源</a>
                     <a class="nav-link" href="guide/multi-language-support.html">多语言支持</a>
                     <a class="nav-link" href="guide/change-log.html">更新日志</a>
-                    <a class="nav-link" href="guide/sql-statement.html">常用SQL语句</a>
+                    <a class="nav-link active" href="guide/sql-statement.html" aria-selected="true">常用SQL语句</a>
                     <button class="nav-link  nav-link-disabled mt-4" disabled>其他</button>
                     <a class="nav-link" href="guide/faq.html">常见问题</a>
-                    <a class="nav-link active" href="guide/program-security.html" aria-selected="true">程序安全</a>
-                    <a class="nav-link" href="guide/donate.html">捐赠支持</a>
+                    <a class="nav-link" href="index.html">程序安全</a>
+                    <a class="nav-link" href="index.html">捐赠支持</a>
                 </div>
             </div>
         </div>
@@ -182,34 +182,189 @@
                 <ul class="nav flex-column" aria-orientation="vertical">
                     <li class="nav-link nav-link-disabled" disabled>指南</li>
                     <li class="nav-link"><a href="index.html">MacCms V10.x</a></li>
-                    <li class="nav-link"><a href="guide/get-started.html">快速上手</a></li>
-                    <li class="nav-link"><a href="#section-1">目录结构</a></li>
+                    <li class="nav-link"><a href="#section-1">快速上手</a></li>
+                    <li class="nav-link"><a href="guide/directory-structure.html">目录结构</a></li>
                     <li class="nav-link"><a href="guide/template-plugin.html">模板插件</a></li>
                     <li class="nav-link"><a href="guide/third-party-resources.html">第三方资源</a></li>
                     <li class="nav-link"><a href="guide/multi-language-support.html">多语言支持</a></li>
-                    <li class="nav-link"><a href="#section-1">更新日志</a></li>
-                    <li class="nav-link"><a href="guide/sql-statement.html">常用SQL语句</a></li>
+                    <li class="nav-link"><a href="guide/change-log.html">更新日志</a></li>
+                    <li class="section-1 nav-link active"><a href="guide/sql-statement.html">常用SQL语句</a></li>
+                    <li class="section-2 nav-link sub-link"><a href="#section-2">
+                            <div class="ring d-inline-flex"></div><span> 官方自带</span>
+                        </a>
+                    </li>
+                    <li class="section-3 nav-link sub-link"><a href="#section-3">
+                            <div class="ring d-inline-flex"></div><span> 其他常用</span>
+                        </a>
+                    </li>
                     <li class="nav-link nav-link-disabled" disabled>其他</li>
                     <li class="nav-link"><a href="guide/faq.html">常见问题</a></li>
-                    <li class="section-1 nav-link active"><a href="guide/program-security.html">程序安全</a></li>
+                    <li class="nav-link"><a href="guide/program-security.html">程序安全</a></li>
                     <li class="nav-link"><a href="guide/donate.html">捐赠支持</a></li>
                 </ul>
             </div>
             <!--Sidebar menu for desktop End-->
             <div class="main-content">
                 <section id="section-1">
-                    <h2>程序安全</h2>
-                    <h4>Page design cannot be found.</h4>
+                    <h2>常用SQL语句</h2>
+                    <div class="bd-info">
+                        <p class="title">什么是SQL语句</p>
+                        <p>SQL 是用于访问和处理数据库的标准的计算机语言，在苹果cmsV10后台默认集成了许多sql语句，可用于批量替换、批量删除、清空数据库、批量修改、查木马等批处理任务,在苹果cms后台执行需要表头需要用 <r>{pre}</r> 来代替，如 
+                            <r>SELECT * FROM mac_vod</r> 需要改为 <r>SELECT * FROM {pre}vod</r> 才能正常执行。
+                        </p>
+                    </div>
                 </section>
-                
+                <section id="section-2">
+                    <h3 class="subtitle">官方自带</h3>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">
+                                        <m>SELECT</m>&nbsp;<bl>*</bl>&nbsp;<m>FROM</m>&nbsp;{pre}vod&nbsp;&nbsp;<hint>--查询所有数据</hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>SELECT</m>&nbsp;<bl>*</bl>&nbsp;<m>FROM</m>&nbsp;{pre}vod &nbsp;<m>WHERE</m>&nbsp;vod_id<bl>=</bl><y>1000</y> &nbsp;&nbsp;<hint>--查询指定ID数据</hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>DELETE FROM</m>&nbsp;{pre}vod&nbsp;&nbsp;<hint>--删除所有数据</hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>DELETE FROM</m>&nbsp;{pre}vod &nbsp;<m>WHERE</m>&nbsp;vod_id<bl>=</bl><y>1000</y> &nbsp;&nbsp;<hint>--删除指定的第几条数据</hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>DELETE FROM</m>&nbsp;{pre}vod &nbsp;<m>WHERE</m>&nbsp;vod_actor &nbsp;<bl>LIKE</bl>&nbsp;<g>'%刘德华%'</g> &nbsp;&nbsp;<hint>--删除vod_actor = "刘德华"的数据</hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>UPDATE</m>&nbsp;{pre}vod &nbsp;<m>SET</m>&nbsp;vod_hits<bl>=</bl><y>1</y> &nbsp;&nbsp;<hint>--将所有vod_hits字段里的值修改成"1"</hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>UPDATE</m>&nbsp;{pre}vod &nbsp;<m>SET</m>&nbsp;vod_hits<bl>=</bl><y>1</y>&nbsp;<m>WHERE</m>&nbsp;vod_id<bl>=</bl><y>1000</y> &nbsp;&nbsp;<hint>--指定的第几条数据把vod_hits字段里的值修改成"1"</hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>UPDATE</m>&nbsp;{pre}vod &nbsp;<m>SET</m>&nbsp;vod_pic<bl>=</bl><m>REPLACE</m>(vod_pic,&nbsp;<g>'原始字符串'</g>,&nbsp;<g>'替换成其他字符串'</g>)&nbsp; &nbsp;&nbsp;<hint>--替换图片地址 </hint>
+                                    </li>
+                                    <li class="dcode-line">
+                                        <m>TRUNCATE</m>&nbsp;{pre}vod&nbsp;&nbsp;<hint>--清空数据ID重新从1开始慎用</hint>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-3">
+                    <h3 class="subtitle">其他常用</h3>
+                    <p>- 删除数据库名称重复的数据</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">
+                                        <m>DELETE FROM</m>&nbsp;{pre}vod &nbsp;<m>WHERE</m>&nbsp;vod_id not in ( &nbsp;<m>SELECT</m>&nbsp;vod_id&nbsp;<m>FROM</m>&nbsp;{pre}vod&nbsp;<m>GROUP BY</m>&nbsp;vod_name&nbsp;<m>HAVING</m>&nbsp;<y>COUNT</y>(<bl>*</bl>)<bl>></bl>1 )
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">- 修复死锁的表</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">
+                                        <m>REPAIR TABLE</m>&nbsp;`{pre}art` ,`{pre}vod` ,`{pre}<m>type</m>` ,`{pre}<m>comment</m>` ,`{pre}gbook` ,`{pre}link` ,`{pre}admin` ,`{pre}topic` ,`{pre}user` 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">- 网址日来路归零</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">
+                                        <m>UPDATE</m>&nbsp;{pre}vod&nbsp;<m>SET</m>&nbsp;website_referer_day=0
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">- 批量添加播放器编码</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line"><hint>-- 影片批量添加编码为 youku 的播放器</hint></li>
+                                    <li class="dcode-line">
+                                        <m>UPDATE</m>&nbsp;{pre}vod&nbsp;<m>SET</m>&nbsp;vod_play_from&nbsp;<bl>=</bl>&nbsp;concat(vod_play_from,<g>'$$$youku'</g>)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">- 批量添加播放组地址</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line"><hint>-- 用原来的播放组地址复制一份作为另外一个播放器进行播放,需要先进行 批量添加播放器编码替换</hint></li>
+                                    <li class="dcode-line">
+                                        <m>UPDATE</m>&nbsp;{pre}vod&nbsp;<m>SET</m>&nbsp;vod_play_url&nbsp;<bl>=</bl>&nbsp;concat(<g>'$$$youku'</g>,vod_play_url)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!--Prev, Next-->
                 <div class="prev-next">
-                    <a href="guide/faq.html">
+                    <a href="guide/change-log.html">
                         <img class="arrow-right" src="assets/images/com_ic_arrow_left.svg">
-                        常见问题
+                        更新日志
                     </a>
-                    <a href="guide/donate.html">
-                        捐赠支持
+                    <a href="guide/faq.html">
+                        常见问题
                         <img class="arrow-right" src="assets/images/com_ic_arrow_right.svg">
                     </a>
                 </div>

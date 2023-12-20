@@ -163,11 +163,11 @@
                     <a class="nav-link" href="guide/third-party-resources.html">第三方资源</a>
                     <a class="nav-link" href="guide/multi-language-support.html">多语言支持</a>
                     <a class="nav-link active" href="guide/change-log.html"  aria-selected="true">更新日志</a>
-                    <a class="nav-link " href="guide/index.html">常用SQL语句</a>
+                    <a class="nav-link" href="guide/sql-statement.html">常用SQL语句</a>
                     <button class="nav-link  nav-link-disabled mt-4" disabled>其他</button>
-                    <a class="nav-link " href="guide/faq.html">常见问题</a>
+                    <a class="nav-link" href="guide/faq.html">常见问题</a>
                     <a class="nav-link" href="guide/program-security.html">程序安全</a>
-                    <a class="nav-link " href="guide/donate.html">捐赠支持</a>
+                    <a class="nav-link" href="guide/donate.html">捐赠支持</a>
                 </div>
             </div>
         </div>
@@ -183,12 +183,12 @@
                     <li class="nav-link nav-link-disabled" disabled>指南</li>
                     <li class="nav-link"><a href="index.html">MacCms V10.x</a></li>
                     <li class="nav-link"><a href="guide/get-started.html">快速上手</a></li>
-                    <li class="nav-link"><a href="#section-1">目录结构</a></li>
+                    <li class="nav-link"><a href="guide/directory-structure.html">目录结构</a></li>
                     <li class="nav-link"><a href="guide/template-plugin.html">模板插件</a></li>
                     <li class="nav-link"><a href="guide/third-party-resources.html">第三方资源</a></li>
                     <li class="nav-link"><a href="guide/multi-language-support.html">多语言支持</a></li>
-                    <li class="section-1 nav-link active"><a href="#section-1">更新日志</a></li>
-                    <li class="nav-link"><a href="">常用SQL语句</a></li>
+                    <li class="nav-link active"><a href="guide/change-log.html">更新日志</a></li>
+                    <li class="nav-link"><a href="guide/sql-statement.html">常用SQL语句</a></li>
                     <li class="nav-link nav-link-disabled" disabled>其他</li>
                     <li class="nav-link"><a href="guide/faq.html">常见问题</a></li>
                     <li class="nav-link"><a href="guide/program-security.html">程序安全</a></li>
@@ -197,10 +197,32 @@
             </div>
             <!--Sidebar menu for desktop End-->
             <div class="main-content">
-                <section id="section-1">
-                    <h2>更新日志</h2>
-                    <h4>Page design cannot be found.</h4>
-                </section>
+                <h2>更新日志</h2>
+                <h3 class="subtitle">2020.1000.1060</h3>
+                <p>- 修复生成下载页的问题。</p>
+                <p>- 修复过滤分集剧情html的问题。</p>
+                <p>- 修复播放器导入跨站攻击的问题。</p>
+                <p>- 防止上传后门关闭应用中心上传本地插件功能。</p>
+                <p>- 优化后台登录验证。</p>
+                <p>- 修复同步图片显示链接的问题。</p>
+                <p>- 修复后台管理留言搜索的问题。</p>
+                <p>- 修复词库随机插入语句的问题。</p>
+                <p>- 修复发送邮件问题。</p>
+                <p>- 用户中心上传头像支持base64编码方式参数名imgdata。</p>
+                <p>- 其他细节。</p>
+                <h3 class="subtitle">2020.1000.1051</h3>
+                <p>- 后台+安装界面提示信息支持多简繁体切换。</p>
+                <p>- 请参考多语言说明文档可自定义显示信息。</p>
+                <p>- 其他细节。</p>
+                <h3 class="subtitle">2020.1000.1042</h3>
+                <p>- 新增数据库挂马检测功能。</p>
+                <p>- 新增评论入库接口。</p>
+                <p>- 角色入库接口支持豆瓣id对应视频。</p>
+                <p>- 定时任务可以强制执行。</p>
+                <p>- 支持自定义404页面模板。</p>
+                <p>- 后台主要操作内容加入token限制，防止跨站攻击。</p>
+                <p>- 模板编辑保存禁止出现更多关键字。</p>
+                <p>- 其他细节。</p>
                 
                 <!--Prev, Next-->
                 <div class="prev-next">
@@ -208,7 +230,7 @@
                         <img class="arrow-right" src="assets/images/com_ic_arrow_left.svg">
                         多语言支持
                     </a>
-                    <a href="index.html">
+                    <a href="guide/sql-statement.html">
                         常用SQL语句
                         <img class="arrow-right" src="assets/images/com_ic_arrow_right.svg">
                     </a>
