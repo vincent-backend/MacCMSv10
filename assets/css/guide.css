@@ -95,7 +95,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   color: #05031a;
-  margin: 10px 0 0 10px;
+  margin: 0;
 }
 
 section {
@@ -337,7 +337,7 @@ header {
 }
 
 .footer-statement {
-  padding-top: 1.25rem;
+  padding: 16px 20px;
   font-size: 1rem;
   font-weight: 500;
   text-align: justify;
@@ -375,7 +375,7 @@ select option {
   color: #40cc92;
 }
 .container {
-  margin-top: 50px;
+  padding-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -521,6 +521,10 @@ select option {
   margin-top: 20px;
   font-size: 14px;
   line-height: 24px;
+}
+
+.git-informs > a {
+  color:#4d5366 !important;
 }
 
 .git-informs .issues {
@@ -841,6 +845,10 @@ select option {
     line-height: 24px;
   }
 
+  .navbar {
+    box-shadow: 0 0 5px 0 #999;
+  }
+
   .search-md {
     display: block;
   }
@@ -859,8 +867,12 @@ select option {
   .nav-item {
     font-size: 14px;
     font-weight: 400;
-    padding: 0 10px;
+    padding: 0 8px;
     margin-top: 0px;
+  }
+
+  .logo-text {
+    margin: 10px 0 0 10px;
   }
 
   .menu-splitter {
@@ -907,7 +919,7 @@ select option {
   }
 
   .footer-license {
-    padding-top: 84px;
+    padding-top: 20px;
   }
 
   .footer-support-text {
@@ -916,7 +928,7 @@ select option {
   }
 
   .footer-statement {
-    padding-top: 1rem;
+    padding: 24px 20px;
     font-size: 14px;
     font-weight: 500;
     text-align: center;
@@ -941,11 +953,12 @@ select option {
 
   .sidebar {
     display: block;
-    position: relative;
+    position: fixed;
     min-width: 230px;
     max-width: 230px;
     overflow: hidden;
     border-right: 1px solid #d9e6e7;
+    z-index: 10;
   }
 
   .sidebar .nav-link {
@@ -1051,7 +1064,7 @@ select option {
   }
 
   .container-inner .main-content {
-    padding-left: 80px;
+    padding-left: 310px;
     flex-grow: 1;
     overflow-x: clip;
   }

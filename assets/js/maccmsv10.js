@@ -14,10 +14,11 @@ $(document).ready(function () {
         var sectionId = this.element.id;
         $('.sidebar ul li').removeClass('active');
         $('.sidebar ul li.' + sectionId).addClass('active');
-    });
+    }, {offset: '95px'});
 });
 
 $('a[href*=\\#]:not([href=\\#])').click(function () {
+    console.log("aa");
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
         || location.hostname == this.hostname) {
 
@@ -25,7 +26,7 @@ $('a[href*=\\#]:not([href=\\#])').click(function () {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
             $('html,body').animate({
-                scrollTop: target.offset().top - (target.height() / 5)
+                scrollTop: target.offset().top - 100
             }, 500);
             return false;
         }
