@@ -22,31 +22,31 @@ h1 {
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: bold;
   color: #05031a;
-  line-height: 47px;
+  line-height: 46px;
 }
 
 h3 {
-  font-size: 27px;
-  font-weight: bold;
-  color: #323643;
-  line-height: 28px;
-}
-
-h4 {
   font-size: 22px;
   font-weight: bold;
   color: #323643;
   line-height: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #323643;
+  line-height: 24px;
   margin: 20px 0 20px 0;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 26px;
 }
 
 h4 green,
@@ -208,7 +208,7 @@ section {
 
 .nav-item {
   text-align: center;
-  font-size: 21px;
+  font-size: 20px;
   color: #05031a;
   font-weight: 400;
   padding: 10px 20px;
@@ -235,9 +235,9 @@ section {
   background: none;
   color: #4d5366 !important;
   text-align: left;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 10px 0 10px 0;
+  padding: 8px 0 8px 0;
 }
 
 .menu .offcanvas-body .nav-link.active {
@@ -249,7 +249,7 @@ section {
   background: none;
   color: #05031a !important;
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   padding: 14px 0 14px 0;
 }
@@ -288,14 +288,14 @@ header {
 }
 
 .header2 {
-  padding-top: 1.7rem;
-  font-size: 2.125rem;
+  padding-top: 26px;
+  font-size: 30px;
   word-break: break-all;
 }
 
 .header3 {
   padding-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: 400;
   word-break: break-all;
 }
@@ -320,7 +320,7 @@ header {
 
 .footer-support-text {
   color: #4d5366;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .footer-license {
@@ -378,8 +378,7 @@ select option {
 }
 
 .tab-paragraph {
-  margin-top: 20px;
-  line-height: 34px;
+  margin-top: 16px;
 }
 
 .tab-paragraph > a {
@@ -392,7 +391,7 @@ select option {
 
 .p-list {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 34px;
   list-style: "- " !important;
   list-style-position: outside;
@@ -413,10 +412,10 @@ select option {
 }
 
 .accordion-button {
-  padding: 15px 0;
+  padding: 20px 10px;
   background-color: #ffffff;
-  color: #05031A;
-  font-size: 22px;
+  color: #4d5366;
+  font-size: 20px;
   font-weight: bold;
   line-height: 30px;
 }
@@ -439,7 +438,7 @@ select option {
 
 .sub-contents-green > li > a {
   color: #40cc92;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .bd-info {
@@ -460,14 +459,14 @@ select option {
 .bd-info .title,
 .bd-danger .title {
   font-weight: bold;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
 }
 
 .bd-info .description,
 .bd-danger .description {
-  font-size: 20px;
-  line-height: 33px;
+  font-size: 16px;
   list-style: circle;
   padding-left: 20px;
 }
@@ -482,13 +481,13 @@ select option {
 .prev-next > a {
   color: #40cc92 !important;
   text-decoration: none !important;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .prev-next .arrow-right,
 .prev-next .arrow-left {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 /*MaccmsV10.x*/
@@ -501,7 +500,7 @@ select option {
 
 .link-pannel > a {
   color: #40cc92;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 22px;
 }
 

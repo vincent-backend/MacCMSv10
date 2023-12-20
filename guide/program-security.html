@@ -100,7 +100,7 @@
                                     <li><a class="dropdown-item" href="#">网站搬家</a></li>
                                 </ul>
                             </div>
-                        </li>        
+                        </li>
                         <li class="menu-s menu-splitter"></li>
                         <li class="nav-item menu-s">
                             <div class="dropdown">
@@ -192,6 +192,18 @@
                     <li class="nav-link nav-link-disabled" disabled>其他</li>
                     <li class="nav-link"><a href="guide/faq.html">常见问题</a></li>
                     <li class="section-1 nav-link active"><a href="guide/program-security.html">程序安全</a></li>
+                    <li class="section-2 nav-link sub-link"><a href="#section-2">
+                            <div class="ring d-inline-flex"></div><span> 挂马清理</span>
+                        </a>
+                    </li>
+                    <li class="section-3 nav-link sub-link"><a href="#section-3">
+                            <div class="ring d-inline-flex"></div><span> 关于盗版</span>
+                        </a>
+                    </li>
+                    <li class="section-4 nav-link sub-link"><a href="#section-4">
+                            <div class="ring d-inline-flex"></div><span> 利用cloudflare防止cc攻击</span>
+                        </a>
+                    </li>
                     <li class="nav-link"><a href="guide/donate.html">捐赠支持</a></li>
                 </ul>
             </div>
@@ -199,9 +211,131 @@
             <div class="main-content">
                 <section id="section-1">
                     <h2>程序安全</h2>
-                    <h4>Page design cannot be found.</h4>
                 </section>
-                
+                <section id="section-2">
+                    <h3 class="subtitle">挂马清理</h3>
+                    <div class="bd-info">
+                        <p class="title">小白通用清理php后门办法简单易懂</p>
+                        <p>注意：为了安全起见 每次发现被挂马后应该用以下方法来处理！！！</p>
+                    </div>
+                    <p class="tab-paragraph">黑客入侵后可能在数据库挂js，可能在网站目录任何角落留下php后门，用以下方法可以快速清理干净php后门，不用一个一个文件去分析。</p>
+                    <p>- 1，备份原网站配置文件 ，并检查里边是否有后门代码，正常情况下&lt;?php内是一个return array返回数组，如果还有其他&lt;?php块就是后门。</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">\application\database.php</li>
+                                    <li class="dcode-line">\application\route.php</li>
+                                    <li class="dcode-line">\application\extra\maccms.php</li>
+                                    <li class="dcode-line">\application\extra\bind.php</li>
+                                    <li class="dcode-line">\application\extra\timming.php</li>
+                                    <li class="dcode-line">\application\extra\vodplayer.php</li>
+                                    <li class="dcode-line">\application\extra\voddowner.php</li>
+                                    <li class="dcode-line">\application\extra\vodserver.php</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">- 2，检查以下目录搜索 *.php ，删除所有;并检查模板文件内是否有&lt;?php或{php代码段删除。</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">\template\</li>
+                                    <li class="dcode-line">\upload\</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">- 3，删除原有目录及所有文件，并下载最新程序包，覆盖</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">\addons\</li>
+                                    <li class="dcode-line">\application\</li>
+                                    <li class="dcode-line">\extend\</li>
+                                    <li class="dcode-line">\static\</li>
+                                    <li class="dcode-line">\runtime\</li>
+                                    <li class="dcode-line">\thinkphp\</li>
+                                    <li class="dcode-line">\vendor\</li>
+                                    <li class="dcode-line">\说明文档\</li>
+                                    <li class="dcode-line">\admin.php 自定义后台入口文件</li>
+                                    <li class="dcode-line">\api.php 自定义api入口文件</li>
+                                    <li class="dcode-line">\index.php</li>
+                                    <li class="dcode-line">\install.php</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">- 4，把刚才备份的配置文件覆盖到application下即可</p>
+                    <p>- 5，修改后台入口文件名；登录后台检查管理员账号并修改密码，删除多余被黑客创建的账号；</p>
+                    <div class="bd-info">
+                        <p class="title">TIP</p>
+                        <p>使用盗版模板、盗版插件需要注意一下代码是否有问题，白嫖是要技术资本，否则就是一网站安全为代价！</p>
+                    </div>
+                </section>
+                <section id="section-3">
+                    <h3 class="title">关于盗版</h3>
+                    <div class="bd-danger">
+                        <p class="title">使用假冒、盗版程序危害巨大</p>
+                        <p>网络上流传很多版本，甚至很多自称是苹果cms官方网站，这一点大家一定要擦亮的双眼，看清楚了。从 2019 年苹果cms因涉及影视侵权被关闭官网后第一时间发布GitHub的版本，因此我认定这个版本的为正版苹果cms，这个叫 <u>magicblack</u> 的用户也持续在维护中。</p>
+                    </div>
+                    <h4>GitHub</h4>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">https://github.com/magicblack</li>
+                                    <li class="dcode-line">https://github.com/magicblack/maccms10</li>
+                                    <li class="dcode-line">https://github.com/magicblack/maccms8</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!--Prev, Next-->
                 <div class="prev-next">
                     <a href="guide/faq.html">
