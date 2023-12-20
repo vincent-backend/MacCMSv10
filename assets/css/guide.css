@@ -25,43 +25,50 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   color: #05031a;
-  line-height: 46px;
+  line-height: 42px;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   color: #323643;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #323643;
-  line-height: 24px;
+  line-height: 22px;
   margin: 20px 0 20px 0;
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 24px;
 }
 
-h4 green,
-p green {
+g {
   color: #40cc92;
 }
-
-p r {
+r {
   color: #d85252;
+}
+m {
+  color: #BA6DBC;
+}
+bl {
+  color: #51A4F3;
+}
+.dcode-line y {
+  color: #F38215;
 }
 
 html,
 body {
   font-family: "PingFang-SC";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #4d5366;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
@@ -211,7 +218,7 @@ section {
   font-size: 20px;
   color: #05031a;
   font-weight: 400;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 
 .navbar-nav > .active > a {
@@ -314,13 +321,13 @@ header {
 .footer-download-splitter {
   background-color: rgba(217, 230, 231, 1);
   width: 2px;
-  height: 16px;
+  height: 14px;
   margin: 0 25px;
 }
 
 .footer-support-text {
   color: #4d5366;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer-license {
@@ -338,12 +345,12 @@ header {
 
 select {
   font-family: "PingFang-SC";
-  font-size: 18px;
+  font-size: 16px;
 }
 
 select option {
   font-family: "PingFang-SC";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -391,8 +398,8 @@ select option {
 
 .p-list {
   margin-top: 20px;
-  font-size: 18px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 30px;
   list-style: "- " !important;
   list-style-position: outside;
   padding-left: 20px;
@@ -432,13 +439,13 @@ select option {
 
 .sub-contents-green {
   padding: 0;
-  line-height: 45px;
+  line-height: 32px;
   list-style-type: none !important;
 }
 
-.sub-contents-green > li > a {
+.sub-contents-green > li {
   color: #40cc92;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .bd-info {
@@ -459,8 +466,8 @@ select option {
 .bd-info .title,
 .bd-danger .title {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
   margin-bottom: 10px;
 }
 
@@ -481,7 +488,7 @@ select option {
 .prev-next > a {
   color: #40cc92 !important;
   text-decoration: none !important;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .prev-next .arrow-right,
@@ -494,13 +501,14 @@ select option {
 .link-pannel {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
-  gap: 32px;
+  margin-top: 20px;
+  gap: 24px;
+  line-height: 22px;
 }
 
 .link-pannel > a {
   color: #40cc92;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -511,17 +519,17 @@ select option {
   justify-content: start;
   gap: 16px;
   margin-top: 20px;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .git-informs .issues {
   position: relative;
-  width: 170px;
-  height: 32px;
-  padding-right: 14px;
+  width: 130px;
+  height: 24px;
+  padding-right: 10px;
   background: #f2f2f2;
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: right;
 }
 
@@ -530,21 +538,21 @@ select option {
   left: 0;
   top: 0;
   width: auto;
-  height: 32px;
-  padding: 0 14px;
+  height: 24px;
+  padding: 0 10px;
   text-align: center;
   color: #ffffff;
   background-color: #7286ef;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .git-informs .forks {
   position: relative;
-  width: 127px;
-  height: 32px;
-  padding-right: 14px;
+  width: 96px;
+  height: 24px;
+  padding-right: 10px;
   background: #f2f2f2;
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: right;
 }
 
@@ -553,21 +561,21 @@ select option {
   left: 0;
   top: 0;
   width: auto;
-  height: 32px;
-  padding: 0 13px;
+  height: 24px;
+  padding: 0 10px;
   text-align: center;
   color: #ffffff;
   background-color: #40cc92;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .git-informs .stars {
   position: relative;
-  width: 128px;
-  height: 32px;
-  padding-right: 14px;
+  width: 96px;
+  height: 24px;
+  padding-right: 10px;
   background: #f2f2f2;
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: right;
 }
 
@@ -576,21 +584,21 @@ select option {
   left: 0;
   top: 0;
   width: auto;
-  height: 32px;
-  padding: 0 14px;
+  height: 24px;
+  padding: 0 10px;
   text-align: center;
   color: #ffffff;
   background-color: #51a4f3;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .git-informs .php-v {
   position: relative;
-  width: 145px;
-  height: 32px;
-  padding-right: 14px;
+  width: 120px;
+  height: 24px;
+  padding-right: 10px;
   background: #f2f2f2;
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: right;
 }
 
@@ -598,22 +606,22 @@ select option {
   position: absolute;
   left: 0;
   top: 0;
-  width: auto;
-  height: 32px;
-  padding: 0 14px;
+  width: 54px;
+  height: 24px;
+  padding: 0 10px;
   text-align: center;
   color: #ffffff;
   background-color: #f3c115;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .git-informs .mysql-v {
   position: relative;
-  width: 176px;
-  height: 32px;
-  padding-right: 14px;
+  width: 132px;
+  height: 24px;
+  padding-right: 10px;
   background: #f2f2f2;
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: right;
 }
 
@@ -622,12 +630,12 @@ select option {
   left: 0;
   top: 0;
   width: auto;
-  height: 32px;
-  padding: 0 14px;
+  height: 24px;
+  padding: 0 10px;
   text-align: center;
   color: #ffffff;
   background-color: #7286ef;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .code-green {
@@ -638,12 +646,12 @@ select option {
 .code-green .code-line {
   display: flex;
   flex-direction: row;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 22px;
 }
 .code-line .number {
   display: grid;
-  min-width: 24px;
+  min-width: 20px;
   text-align: start;
   align-items: center;
   border-right: 1px solid #d9e6e7;
@@ -715,18 +723,7 @@ select option {
   flex-direction: row;
   align-items: center;
 }
-.dcode-line m {
-  color: #BA6DBC;
-}
-.dcode-line bl {
-  color: #51A4F3;
-}
-.dcode-line y {
-  color: #F38215;
-}
-.dcode-line g {
-  color: #40CC92;
-}
+
 .dcode-line hint {
   opacity: 0.5;
 }
@@ -1075,15 +1072,6 @@ select option {
     padding-left: 20px;
   }
 
-  .sub-contents-green {
-    line-height: 32px;
-  }
-
-  .sub-contents-green > li > a {
-    color: #40cc92;
-    font-size: 16px;
-  }
-
   .bd-info {
     padding: 12px 20px 5px 20px;
   }
@@ -1137,82 +1125,6 @@ select option {
   .link-pannel > a {
     color: #40cc92;
     font-size: 16px;
-  }
-
-  .git-informs {
-    gap: 16px;
-    margin-top: 30px;
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .git-informs .issues {
-    position: relative;
-    width: 130px;
-    height: 24px;
-    padding-right: 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .issues .title {
-    width: auto;
-    height: 24px;
-    padding: 0 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .forks {
-    width: 96px;
-    height: 24px;
-    padding-right: 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .forks .title {
-    height: 24px;
-    padding: 0 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .stars {
-    width: 96px;
-    height: 24px;
-    padding-right: 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .stars .title {
-    height: 24px;
-    padding: 0 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .php-v {
-    position: relative;
-    width: 120px;
-    height: 24px;
-    padding-right: 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .php-v .title {
-    width: 54px;
-    height: 24px;
-    padding: 0 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .mysql-v {
-    width: 125px;
-    height: 24px;
-    padding-right: 10px;
-    border-radius: 12px;
-  }
-
-  .git-informs .mysql-v .title {
-    height: 24px;
-    padding: 0 8px;
-    border-radius: 12px;
   }
 
   .code-green {
