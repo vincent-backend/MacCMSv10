@@ -888,7 +888,7 @@ select option {
     position: relative;
     min-width: 230px;
     max-width: 230px;
-    height: 700px;
+    height: 550px;
     overflow-x: hidden;
     border-right: 1px solid #d9e6e7;
   }
@@ -951,7 +951,7 @@ select option {
   .sidebar > .faq-menu {
     position: absolute;
     width: 100%;
-    height: 650px;
+    height: 550px;
     background-color: #ffffff;
     left: 0;
     top: 0;
