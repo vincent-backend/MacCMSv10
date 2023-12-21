@@ -24,7 +24,7 @@
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasSidebarMenu" aria-controls="offcanvasNavbar">
                 <span>
-                    <img src="assets/images/navbar/home_black.svg" width="60" height="60" />
+                    <img src="assets/images/navbar/home_black.svg" width="50" height="50" style="margin-left: -5px;" />
                 </span>
             </button>
             <a class="navbar-brand" href="index.html">
@@ -41,7 +41,7 @@
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span>
-                    <img src="assets/images/navbar/menu.svg" width="48" height="48" />
+                    <img src="assets/images/navbar/menu.svg" width="36" height="36" />
                 </span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
@@ -331,7 +331,7 @@
                     </p>
                     <div class="bd-info">
                         <p class="title">TIP</p>
-                        <p class="description">
+                        <p>
                             如果使用的是php5.6版本（php7版本不受影响），还需要设置 <r>php.ini</r> 开启 <br>
                             <r>always_populate_raw_post_data = -1</r> 这个选项，也就是去掉这项配置前面的分号即可。
                         </p>
@@ -345,7 +345,7 @@
                     <h3 class="subtitle">提示 SQLSTATE_22001</h3>
                     <div class="bd-info">
                         <div class="title">TIP</div>
-                        <p class="description">SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column '' at row 1 或者 Warning:<br>
+                        <p>SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column '' at row 1 或者 Warning:<br>
                             1265 Data truncated for column 类似错误</p>
                     </div>
                     <p class="tab-paragraph">该错误就插入字段长度超过设定的长度，一般程序会在数据库字段设置字符长度在插入之前程序很少会先判断数据长度和截取数据 这样会影响性能，所以你就需要修改你数据库的配置文件一般在 

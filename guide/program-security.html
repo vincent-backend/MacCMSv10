@@ -24,7 +24,7 @@
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasSidebarMenu" aria-controls="offcanvasNavbar">
                 <span>
-                    <img src="assets/images/navbar/home_black.svg" width="60" height="60" />
+                    <img src="assets/images/navbar/home_black.svg" width="50" height="50" style="margin-left: -5px;" />
                 </span>
             </button>
             <a class="navbar-brand" href="index.html">
@@ -41,7 +41,7 @@
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span>
-                    <img src="assets/images/navbar/menu.svg" width="48" height="48" />
+                    <img src="assets/images/navbar/menu.svg" width="36" height="36" />
                 </span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
@@ -310,7 +310,7 @@
                     </div>
                 </section>
                 <section id="section-3">
-                    <h3 class="title">关于盗版</h3>
+                    <h3 class="subtitle">关于盗版</h3>
                     <div class="bd-danger">
                         <p class="title">使用假冒、盗版程序危害巨大</p>
                         <p>网络上流传很多版本，甚至很多自称是苹果cms官方网站，这一点大家一定要擦亮的双眼，看清楚了。从 2019 年苹果cms因涉及影视侵权被关闭官网后第一时间发布GitHub的版本，因此我认定这个版本的为正版苹果cms，这个叫 <u>magicblack</u> 的用户也持续在维护中。</p>
@@ -335,27 +335,82 @@
                         </div>
                     </div>
                     <div class="git-informs">
-                        <div class="issues" id="issues">
-                            <div class="title">issues</div>
-                            18 Open
-                        </div>
-                        <div class="forks" id="forks">
-                            <div class="title">forks</div>
-                            669
-                        </div>
-                        <div class="stars" id="stars">
-                            <div class="title">stars</div>
-                            1.8k
-                        </div>
-                        <div class="php-v" id="php-v">
-                            <div class="title">php</div>
-                            >=5.6.x
-                        </div>
-                        <div class="mysql-v" id="mysql-v">
-                            <div class="title">MySQL</div>
-                            >=5.5.x
+                        <a href="https://github.com/magicblack/maccms10" target="_blank">
+                            <div class="issues" id="issues">
+                                <div class="title">issues</div>
+                                15 Open
+                            </div>
+                        </a>
+                        <a href="https://github.com/magicblack/maccms10" target="_blank">
+                            <div class="forks" id="forks">
+                                <div class="title">forks</div>
+                                655
+                            </div>
+                        </a>
+                        <a href="https://github.com/magicblack/maccms10" target="_blank">
+                            <div class="stars" id="stars">
+                                <div class="title">stars</div>
+                                1.8k
+                            </div>
+                        </a>
+                        <div class="license">
+                            <div class="title">license</div>
+                            not identifiable by github
                         </div>
                     </div>
+                    <h4>sdelivr加速下载 <g>'Jsdelivr'</g></h4>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">https://cdn.jsdelivr.net/gh/magicblack/maccms_down/</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-info">
+                        <p class="title">最后提示</p>
+                        <p>一个优秀并且开源的程序出现盗版，这一点都不奇怪，并且出现一些争议性的谣言也是可以理解，当然世界上也不存在绝对安全无漏洞的程序，关键在于有没有人无偿地、永久地维护这个程序！</p>
+                    </div>
+                </section>
+                <section id="section-4">
+                    <h3 class="subtitle">利用cloudflare防止cc攻击</h3>
+                    <p>经过大量研究和自己被cc攻击的经验，这帮人手里大部分ip都是国外的，而你的网站针对的是国内人群，所以只需要屏蔽国外ip就可以达到很好的拦截cc攻击效果。</p>
+                    <p>1，首先你得有 'http://cloudflare.com' (opens new window)的账户，添加域名，按提示把域名 </p>
+                    <p>2，点击顶部菜单 【防火墙】，选择进入 创建防火墙规则</p>
+                    <figure>
+                        <medium-zoom
+                          src="assets/images/guide/pic_security_1.png"
+                          alt="Security-1"
+                        ></medium-zoom>
+                      </figure>
+                    <p class="tab-paragraph">这里演示除了 中国大陆，香港，台湾意外 全部 进入JS质询（或阻止）。表达式是</p>
+                    <div class="dcode">
+                        <div class="dcode-body">
+                            <div class="dcode-num">
+                                <ul class="dcode-num-list">
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                            <div class="dcode-space">
+                                <ul class="dcode-space-list">
+                                    <li class="dcode-line">ip.geoip.country ne "CN" and ip.geoip.country ne "HK" and ip.geoip.country ne "TW"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tab-paragraph">3，填写相关内容，名称随意 按照国家来筛选拦截即可。</p>
+                    <figure>
+                        <medium-zoom
+                          src="assets/images/guide/pic_security_2.png"
+                          alt="Security-2"
+                        ></medium-zoom>
+                      </figure>
                 </section>
 
                 <!--Prev, Next-->
@@ -391,9 +446,10 @@
     <!--Global Scripts-->
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/jQuery/jquery.min.js"></script>
+    <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
     <!--Custom Scripts-->
     <script src="assets/js/maccmsv10.js"></script>
-    <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/plugins/medium-zoom/medium-zoom-element.min.js"></script>
 </body>
 
 </html>

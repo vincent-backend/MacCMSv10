@@ -47,6 +47,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin-bottom: 8px;
 }
 
 g {
@@ -79,6 +80,13 @@ body {
   background-position: top right;
   background-repeat: no-repeat;
   padding-right: 0 !important;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -205,6 +213,10 @@ section {
 .offcanvas-header {
   padding-top: 7px;
   padding-left: 0;
+}
+
+.navbar {
+  box-shadow: 0 0 5px 0 #999;
 }
 
 .navbar-brand {
@@ -451,14 +463,14 @@ select option {
 .bd-info {
   background-color: #f2f9ff;
   color: #51a4f3;
-  margin-top: 30px;
+  margin-top: 16px;
   padding: 16px 14px 8px 14px;
 }
 
 .bd-danger {
   background-color: #fcf2f2;
   color: #d85252;
-  margin-top: 30px;
+  margin-top: 16px;
   padding: 14px;
   padding: 16px 14px 8px 14px;
 }
@@ -517,7 +529,7 @@ select option {
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  gap: 16px;
+  gap: 12px;
   margin-top: 20px;
   font-size: 14px;
   line-height: 24px;
@@ -639,6 +651,27 @@ select option {
   text-align: center;
   color: #ffffff;
   background-color: #7286ef;
+  border-radius: 12px;
+}
+.git-informs .license {
+  position: relative;
+  width: 245px;
+  height: 24px;
+  padding-right: 10px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  text-align: right;
+}
+.git-informs .license .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 24px;
+  padding: 0 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f3c115;
   border-radius: 12px;
 }
 
@@ -839,16 +872,6 @@ select option {
     margin: 20px 0 20px 0;
   }
 
-  p {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
-  }
-
-  .navbar {
-    box-shadow: 0 0 5px 0 #999;
-  }
-
   .search-md {
     display: block;
   }
@@ -945,12 +968,6 @@ select option {
     display: none;
   }
 
-  .container-inner {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-  }
-
   .sidebar {
     display: block;
     position: fixed;
@@ -958,7 +975,6 @@ select option {
     max-width: 230px;
     overflow: hidden;
     border-right: 1px solid #d9e6e7;
-    z-index: 10;
   }
 
   .sidebar .nav-link {
